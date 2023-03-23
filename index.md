@@ -2,7 +2,7 @@
 title: "Подкаст технического коммуникатора"
 keywords: 
 # tags:
-sidebar: general_sidebar
+sidebar: general_sidebar_techwritex
 permalink: index.html
 toc: false
 lang: "ru"

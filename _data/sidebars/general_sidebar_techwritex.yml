@@ -6,33 +6,33 @@ entries:
   folders:
 
   - title: Резюме
-    url: ../index.html
+    url: https://techwritex.ru
     output: web
 
   - title: Зачем?
-    url: ../why.html
+    url: https://techwritex.ru/why.html
     output: web
 
   - title: Заметки 
-    url: ../notes.html
+    url: https://techwritex.ru/notes.html
     output: web
 
   - title: Подкаст 
-    url: ../podcast_techcommpod.html
+    url: index.html
     output: web
 
   - title: Инструкция 
-    url: ../kak-napisat-instruktciyu.html
+    url: https://techwritex.ru/kak-napisat-instruktciyu.html
     output: web
   
   - title: Портфолио 
-    url: ../portfolio.html
+    url: https://techwritex.ru/portfolio.html
     output: web
   
   - title: Контакты 
-    url: ../contacts.html
+    url: https://techwritex.ru/contacts.html
     output: web
 
   - title: English 
-    url: ../en/index.html
+    url: https://techwritex.ru/en/index.html
     output: web
