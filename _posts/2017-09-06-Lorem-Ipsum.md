@@ -4,9 +4,9 @@ title:  "Lorem ipsum"
 date:   2017-09-06 01:03:29 +0200
 categories: jekyll update
 comments: true
-episode: <div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2126226.js?container_id=buzzsprout-small-player&player=small'></script>
+episode: 
 ---
-Totam vitae quasi nulla aut aliquam harum.
+<div id='buzzsprout-small-player'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/2126226.js?container_id=buzzsprout-small-player&player=small'></script>
 
 <!--more-->
 
