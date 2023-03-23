@@ -13,6 +13,7 @@ title: Главная
     <i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
     <p>
       {% if post.excerpt %}
+        {{post.episode}}
         {{ post.excerpt }}
       {% else %}
         {{ post.content }}
