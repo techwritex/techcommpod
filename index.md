@@ -10,17 +10,17 @@ title:
     <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
       <h3>{{post.title}}</h3>
     </a>
-    <i>posted on {{ post.date | date: "%-d %b %Y" }}</i>
+    <i>posted on {{ post.date | date: "%d.%m.%Y" }}</i>
     <p>
       {% if post.excerpt %}
         {{ post.excerpt }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p>Транскрибация выпуска</p>
+          <p>Текстовый формат выпуска "{{post.episode}}"</p>
         </a>
       {% else %}
         {{ post.content }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p>Транскрибация выпуска</p>
+          <p>Текстовый формат выпуска "{{post.episode}}"</p>
         </a>
       {% endif %}
     </p>

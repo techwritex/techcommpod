@@ -4,7 +4,7 @@ title:  "Выпуск #2. Единый источник правды"
 date:   2023-02-16 09:00:00 +0200
 categories: 
 comments: true
-episodeurl: vypusk-2-edinyj-istochnik-pravdy.html
+episode: "Единый источник правды"
 ---
 
 Как развивалась техническая документация? 
