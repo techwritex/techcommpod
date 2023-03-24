@@ -152,7 +152,7 @@ Cреди них:
 <p>
     <figure>
         <img src="{{site.url}}{{site.baseurl}}/assets/images/episode1/statistika-tekhpisatel-rabota-rossii.png" alt="Статистика вакансий технических писателей портала Работа России по сферам деятельности" style="border: 0px solid #D3D3D3;"/>
-        <figcaption style="color: #6c6c6c; text-align: center;">Рисунок 1. Статистика вакансий технических писателей портала Работа России по сферам деятельности</figcaption>
+        <figcaption style="color: #6c6c6c; text-align: left;">Рисунок 1. Статистика вакансий технических писателей портала Работа России по сферам деятельности</figcaption>
     </figure>
 </p>
 
@@ -169,7 +169,7 @@ Cреди них:
 <p>
     <figure>
         <img src="{{site.url}}{{site.baseurl}}/assets/images/episode1/statistika-tekhpisateli-ssha.png" alt="Прогнозные данные Бюро статистики труда при Министерстве труда США по техническим писателям" style="border: 0px solid #D3D3D3;"/>
-        <figcaption style="color: #6c6c6c; text-align: center;">Рисунок 2. Прогнозные данные Бюро статистики труда при Министерстве труда США по техническим писателям</figcaption>
+        <figcaption style="color: #6c6c6c; text-align: left;">Рисунок 2. Прогнозные данные Бюро статистики труда при Министерстве труда США по техническим писателям</figcaption>
     </figure>
 </p>
 
@@ -204,3 +204,5 @@ Cреди них:
 На этом у меня всё. До встречи через две недели!
 
 С Вами был Владимир Юсупов и подкаст технического коммуникатора Техкомпод. Пока!
+
+{% include podcast_subscribe_form_1.html %}
