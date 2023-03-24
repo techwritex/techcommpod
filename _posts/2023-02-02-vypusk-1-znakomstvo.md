@@ -6,11 +6,11 @@ categories: общее
 comments: false
 ---
 
-<div id="buzzsprout-player-12171409"></div><script src="https://www.buzzsprout.com/2126226/12171409-1.js?container_id=buzzsprout-player-12171409&player=small" type="text/javascript" charset="utf-8"></script>
-
 Сколько русскоязычных подкастов о технических коммуникаторах Вы слушаете?
 Ну, хотя бы знаете, кто такие технические коммуникаторы? 
 Ладно, расслабьтесь. Послушайте первый выпуск и всё сразу поймёте.
+
+<div id="buzzsprout-player-12171409"></div><script src="https://www.buzzsprout.com/2126226/12171409-1.js?container_id=buzzsprout-player-12171409&player=small" type="text/javascript" charset="utf-8"></script>
 
 <!--more-->
 

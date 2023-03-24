@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Все выпуски
+title: 
 permalink: /playlist/
 ---
 
