@@ -14,8 +14,14 @@ title:
     <p>
       {% if post.excerpt %}
         {{ post.excerpt }}
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
+          <p>Транскрибация выпуска</p>
+        </a>
       {% else %}
         {{ post.content }}
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
+          <p>Транскрибация выпуска</p>
+        </a>
       {% endif %}
     </p>
   </div>

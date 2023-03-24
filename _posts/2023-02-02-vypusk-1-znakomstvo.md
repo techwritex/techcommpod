@@ -4,6 +4,7 @@ title:  "Выпуск #1. Знакомство"
 date:   2023-02-02 09:00:00 +0200
 categories: 
 comments: false
+episodeurl: vypusk-1-znakomstvo.html
 ---
 
 Сколько русскоязычных подкастов о технических коммуникаторах Вы слушаете?
