@@ -2,7 +2,7 @@
 layout: post
 title:  "Выпуск #1. Знакомство"
 date:   2023-02-02 09:00:00 +0200
-categories: общее
+categories: 
 comments: false
 ---
 
