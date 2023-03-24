@@ -10,7 +10,7 @@ title:
     <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
       <h3>{{post.title}}</h3>
     </a>
-    <i>posted on {{ post.date | date: "%d.%m.%Y" }}</i>
+    <i>Опубликовано {{ post.date | date: "%d.%m.%Y" }}</i>
     <p>
       {% if post.excerpt %}
         {{ post.excerpt }}
