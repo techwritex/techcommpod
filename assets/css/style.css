@@ -109,7 +109,7 @@ a:hover	{
 	text-decoration: underline;
 }
 
-#myblockquote {
+/* #myblockquote {
 	margin: 0;
 	background: #F0F0F1;
 	color: #333334;
@@ -140,7 +140,7 @@ a:hover	{
 #myblockquote cite {
 	font-style: normal;
 	font-weight: 300;
-}
+} */
 
 @media screen and (max-width: 850px) {
 	#main {
