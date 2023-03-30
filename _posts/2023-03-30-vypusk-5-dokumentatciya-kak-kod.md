@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Выпуск #5. Документация как код"
-date:   2023-03-29 09:00:00 +0000
+date:   2023-03-30 09:00:00 +0000
 categories: 
 comments: false
 episode: "Документация как код"
