@@ -109,6 +109,22 @@ a:hover	{
 	text-decoration: underline;
 }
 
+/* custom style start*/
+
+table, td, th {  
+	border: 1px solid #ddd;
+	text-align: left;
+  }
+  
+  table {
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  th, td {
+	padding: 15px;
+  }
+
 /* #myblockquote {
 	margin: 0;
 	background: #F0F0F1;
@@ -141,6 +157,8 @@ a:hover	{
 	font-style: normal;
 	font-weight: 300;
 } */
+
+/* custom style end*/
 
 @media screen and (max-width: 850px) {
 	#main {
