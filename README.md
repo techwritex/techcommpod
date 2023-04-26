@@ -1,2 +1,2 @@
 # techcommpod
-Technical communicator podcast (TECHCOMPOD.RU)
+Technical communicator podcast (https://techcommpod.ru)
