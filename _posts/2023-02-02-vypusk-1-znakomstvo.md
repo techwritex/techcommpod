@@ -11,7 +11,15 @@ episode: "Знакомство"
 Ну, хотя бы знаете, кто такие технические коммуникаторы? 
 Ладно, расслабьтесь. Послушайте первый выпуск и всё сразу поймёте.
 
-<div id="buzzsprout-player-12171409"></div><script src="https://www.buzzsprout.com/2126226/12171409-1.js?container_id=buzzsprout-player-12171409&player=small" type="text/javascript" charset="utf-8"></script>
+<!-- <div id="buzzsprout-player-12171409"></div><script src="https://www.buzzsprout.com/2126226/12171409-1.js?container_id=buzzsprout-player-12171409&player=small" type="text/javascript" charset="utf-8"></script> -->
+
+<figure>
+    <figcaption>Слушать выпуск:</figcaption>
+    <audio controls src="{{site.url}}{{site.baseurl}}/assets/episodes/001_episode_final.mp3">
+        <a href="{{site.url}}{{site.baseurl}}/assets/episodes/001_episode_final.mp3"> Скачать файл </a>
+    </audio>
+</figure>
+
 
 <!--more-->
 
