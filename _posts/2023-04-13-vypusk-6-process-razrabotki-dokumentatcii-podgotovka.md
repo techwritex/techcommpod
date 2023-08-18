@@ -9,7 +9,14 @@ episode: "Процесс разработки технической докум�
 
 В основе любой деятельности лежит набор определенных процессов. Разработка технической документации не является исключением. В  сегодняшнем выпуске о первом этапе процесса создания документации.
 
-<div id="buzzsprout-player-12687859"></div><script src="https://www.buzzsprout.com/2126226/12687859-6.js?container_id=buzzsprout-player-12687859&player=small" type="text/javascript" charset="utf-8"></script>
+<!-- <div id="buzzsprout-player-12687859"></div><script src="https://www.buzzsprout.com/2126226/12687859-6.js?container_id=buzzsprout-player-12687859&player=small" type="text/javascript" charset="utf-8"></script> -->
+
+<figure>
+    <figcaption></figcaption>
+    <audio controls src="{{site.url}}{{site.baseurl}}/assets/episodes/006_episode_final.mp3">
+        <a href="{{site.url}}{{site.baseurl}}/assets/episodes/006_episode_final.mp3"> Скачать файл </a>
+    </audio>
+</figure>
 
 <!--more-->
 
