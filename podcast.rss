@@ -8,7 +8,7 @@
     </itunes:owner>
     <itunes:author>Владимир Юсупов</itunes:author>
     <itunes:category text="Technology" />
-    <itunes:explicit>no</itunes:explicit>
+    <itunes:explicit>false</itunes:explicit>
     <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих технических коммуникаторов, обмена опытом и лучшими практиками.</description>
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.jpeg"/>
     <language>ru</language>
