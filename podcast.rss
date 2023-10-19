@@ -14,6 +14,15 @@
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
     <item>
+      <title>Выпуск #9. Визуализация данных</title>
+      <description>Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных. В  сегодняшнем выпуске рассмотрим визуализацию данных, как вид техкоммуникации.</description>
+      <pubDate>Thu, 19 Oct 2023 09:00:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.ru/assets/episodes/008_episode_final.mp3"
+                 type="audio/mpeg" length="9659394"/>
+      <itunes:duration>08:15</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-8-process-razrabotki-dokumentatcii-soglasovanie-publikatsiya/</guid>
+    </item>
+    <item>
       <title>Выпуск #8. Процесс разработки технической документации (согласование и публикация)</title>
       <description>В основе любой деятельности лежит набор определенных процессов. Разработка технической документации не является исключением. В сегодняшнем выпуске о третьем и четвертом этапах процесса создания документации.</description>
       <pubDate>Thu, 11 May 2023 09:00:00 GMT</pubDate>
