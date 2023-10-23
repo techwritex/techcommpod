@@ -10,6 +10,7 @@
     <itunes:category text="Technology" />
     <itunes:explicit>false</itunes:explicit>
     <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих специалистов техкоммуникации, обмена опытом и лучшими практиками.</description>
+    <copyright>© 2023 Владимир Юсупов</copyright>
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.png"/>
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
