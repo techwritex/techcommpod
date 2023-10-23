@@ -9,7 +9,7 @@
     <itunes:author>Владимир Юсупов</itunes:author>
     <itunes:category text="Technology" />
     <itunes:explicit>false</itunes:explicit>
-    <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих технических коммуникаторов, обмена опытом и лучшими практиками.</description>
+    <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих специалистов техкоммуникации, обмена опытом и лучшими практиками.</description>
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.jpeg"/>
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
@@ -17,10 +17,10 @@
       <title>Выпуск #9. Визуализация данных</title>
       <description>Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных. В  сегодняшнем выпуске рассмотрим визуализацию данных, как вид техкоммуникации.</description>
       <pubDate>Thu, 19 Oct 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/008_episode_final.mp3"
-                 type="audio/mpeg" length="9659394"/>
-      <itunes:duration>08:15</itunes:duration>
-      <guid isPermaLink="true">https://techcommpod.ru/vypusk-8-process-razrabotki-dokumentatcii-soglasovanie-publikatsiya/</guid>
+      <enclosure url="https://techcommpod.ru/assets/episodes/009_episode_final.mp3"
+                 type="audio/mpeg" length="10432318"/>
+      <itunes:duration>09:04</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-9-vizualizatciya-dannykh/</guid>
     </item>
     <item>
       <title>Выпуск #8. Процесс разработки технической документации (согласование и публикация)</title>
