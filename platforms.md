@@ -8,12 +8,12 @@ permalink: /platforms/
 
 <p>
     <figure>
-        <img src="{{site.url}}{{site.baseurl}}/assets/platforms/RU_Apple_Podcasts_techcommpod.svg" alt="Техкомпод на Apple Podcasts"/>
+        <a href="https://apple.co/3SbtZXI"><img src="{{site.url}}{{site.baseurl}}/assets/platforms/RU_Apple_Podcasts_techcommpod.svg" alt="Техкомпод на Apple Podcasts"/></a>
     </figure>
 </p>
 
 <p>
     <figure>
-        <img src="{{site.url}}{{site.baseurl}}/assets/platforms/RU_Google_Podcasts_techcommpod.svg" alt="Техкомпод на Google Podcasts"/>
+        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly90ZWNoY29tbXBvZC5ydS9wb2RjYXN0LnJzcw"><img src="{{site.url}}{{site.baseurl}}/assets/platforms/RU_Google_Podcasts_techcommpod.svg" alt="Техкомпод на Google Podcasts"/></a>
     </figure>
 </p>
