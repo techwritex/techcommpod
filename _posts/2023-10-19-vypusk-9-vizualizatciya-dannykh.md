@@ -11,8 +11,8 @@ episode: "Визуализация даных"
 
 <figure>
     <figcaption></figcaption>
-    <audio controls src="https://techcommpod.ru/assets/episodes/009_episode_final.mp3">
-        <a href="https://techcommpod.ru/assets/episodes/009_episode_final.mp3"> Скачать файл </a>
+    <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/009_episode_final.mp3">
+        <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/009_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
 
