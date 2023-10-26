@@ -18,7 +18,7 @@
       <title>Выпуск #9. Визуализация данных</title>
       <description>Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных. В  сегодняшнем выпуске рассмотрим визуализацию данных, как вид техкоммуникации.</description>
       <pubDate>Thu, 19 Oct 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/009_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/009_episode_final.mp3"
                  type="audio/mpeg" length="10432318"/>
       <itunes:duration>09:04</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-9-vizualizatciya-dannykh/</guid>
@@ -27,7 +27,7 @@
       <title>Выпуск #8. Процесс разработки технической документации (согласование и публикация)</title>
       <description>В основе любой деятельности лежит набор определенных процессов. Разработка технической документации не является исключением. В сегодняшнем выпуске о третьем и четвертом этапах процесса создания документации.</description>
       <pubDate>Thu, 11 May 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/008_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/008_episode_final.mp3"
                  type="audio/mpeg" length="9659394"/>
       <itunes:duration>08:15</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-8-process-razrabotki-dokumentatcii-soglasovanie-publikatsiya/</guid>
@@ -36,7 +36,7 @@
       <title>Выпуск #7. Процесс разработки технической документации (разработка)</title>
       <description>В основе любой деятельности лежит набор определенных процессов. Разработка технической документации не является исключением. В сегодняшнем выпуске о втором этапе процесса создания документации.</description>
       <pubDate>Thu, 27 Apr 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/007_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/007_episode_final.mp3"
                  type="audio/mpeg" length="12877381"/>
       <itunes:duration>11:14</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-7-process-razrabotki-dokumentatcii-razrabotka/</guid>
@@ -45,7 +45,7 @@
       <title>Выпуск #6. Процесс разработки технической документации (подготовка)</title>
       <description>В основе любой деятельности лежит набор определенных процессов. Разработка технической документации не является исключением. В сегодняшнем выпуске о первом этапе процесса создания документации.</description>
       <pubDate>Thu, 13 Apr 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/006_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/006_episode_final.mp3"
                  type="audio/mpeg" length="13516100"/>
       <itunes:duration>11:54</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-6-process-razrabotki-dokumentatcii-podgotovka/</guid>
@@ -54,7 +54,7 @@
       <title>Выпуск #5. Документация как код</title>
       <description>Переход российских компаний на парадигму “документация как код” в части создания и сопровождения технической документации, а также для чего нужны и как написать понятные сообщения для git-коммитов.</description>
       <pubDate>Thu, 30 Mar 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/005_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/005_episode_final.mp3"
                  type="audio/mpeg" length="10383099"/>
       <itunes:duration>09:26</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-5-dokumentatciya-kak-kod/</guid>
@@ -63,7 +63,7 @@
       <title>Выпуск #4. Дополнение по единому источнику правды</title>
       <description>Небольшое дополнение к выпуску о едином источнике правды документации.</description>
       <pubDate>Thu, 16 Mar 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/004_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3"
                  type="audio/mpeg" length="6120720"/>
       <itunes:duration>05:15</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-4-edinyj-istochnik-pravdy-dopolnenie/</guid>
@@ -72,7 +72,7 @@
       <title>Выпуск #3. Уильям Зинсер. Как писать хорошо</title>
       <description>Отзыв на книгу Уильяма Зинсера “Как писать хорошо. Классическое руководство по созданию нехудожественных текстов”.</description>
       <pubDate>Thu, 02 Mar 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/003_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/003_episode_final.mp3"
                  type="audio/mpeg" length="11541511"/>
       <itunes:duration>10:38</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-3-zinser-kak-pisat-khorosho/</guid>
@@ -81,7 +81,7 @@
       <title>Выпуск #2. Единый источник правды</title>
       <description>Как развивалась техническая документация? Что такое единый источник правды? Ответы на эти вопросы в данном выпуске подкаста.</description>
       <pubDate>Thu, 16 Feb 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/002_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/002_episode_final.mp3"
                  type="audio/mpeg" length="12462252"/>
       <itunes:duration>10:56</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-2-edinyj-istochnik-pravdy/</guid>
@@ -90,7 +90,7 @@
       <title>Выпуск #1. Знакомство</title>
       <description>Сколько русскоязычных подкастов о технических коммуникаторах Вы слушаете? Ну, хотя бы знаете, кто такие технические коммуникаторы? Ладно, расслабьтесь. Послушайте первый выпуск и всё сразу поймёте.</description>
       <pubDate>Thu, 02 Feb 2023 09:00:00 GMT</pubDate>
-      <enclosure url="https://techcommpod.ru/assets/episodes/001_episode_final.mp3"
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/001_episode_final.mp3"
                  type="audio/mpeg" length="14345283"/>
       <itunes:duration>15:10</itunes:duration>
       <guid isPermaLink="true">https://techcommpod.ru/vypusk-1-znakomstvo/</guid>
