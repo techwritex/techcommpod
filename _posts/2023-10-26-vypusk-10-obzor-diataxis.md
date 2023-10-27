@@ -2,6 +2,7 @@
 layout: post
 title:  "Выпуск #10. Обзор Diataxis (системный подход к созданию технической документации) "
 date:   2023-10-26 01:00:00 +0000
+keywords: Diataxis, Daniele Procida, техкомпод, подкаст технического коммуникатора
 categories: 
 comments: false
 episode: "Выпуск #10. Обзор Diataxis (системный подход к созданию технической документации)"
