@@ -14,6 +14,15 @@
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.png"/>
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
+     <item>
+      <title>Выпуск #10. Обзор Diataxis (системный подход к созданию технической документации)</title>
+      <description><![CDATA[<p>Diátaxis - подход структурирования и организации технической документации, который значительно упрощает работу с документацией как её разработчикам, так и читателям (пользователям). В сегодняшнем выпуске представлен краткий обзор данного подхода.</p><p><a href="https://diataxis.fr/">diataxis.fr</a></p><p><a href="https://vurt.org/">Daniele Procida</a></p><p><a href="https://www.brighttalk.com/webcast/9273/594742">Запись вебинара Introducing the Diátaxis Approach to Technical Documentation</a></p>]]></description>
+      <pubDate>Thu, 26 Oct 2023 09:00:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/010_episode_final.mp3"
+                 type="audio/mpeg" length="12857820"/>
+      <itunes:duration>10:57</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-10-obzor-diataxis/</guid>
+    </item>
     <item>
       <title>Выпуск #9. Визуализация данных</title>
       <description>Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных. В  сегодняшнем выпуске рассмотрим визуализацию данных, как вид техкоммуникации.</description>
