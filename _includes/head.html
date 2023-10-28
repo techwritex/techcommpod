@@ -1,13 +1,12 @@
 <head>
-    <!-- <title>{{site.title}}</title> -->
-    <title>{% if post.title %}{{ post.title }}{% else %}{{site.title}}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}</title>
     <link rel="icon" type="image/x-icon" href="{{site.url}}{{site.baseurl}}/assets/images/favicon.ico">
     <meta charset="utf-8">
     <link href="{{site.url}}{{site.baseurl}}/assets/css/style.css" type="text/css" rel="stylesheet"></link>
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"> 
     <meta content="{{site.description}}" name="description"></meta>
     <meta content="{{site.owner}}" name="author"></meta>
-    <meta name="keywords" content="{% if post.keywords %}{{ post.keywords }}{% else %}{{site.keywords}}{% endif %}"></meta>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{site.keywords}}{% endif %}"></meta>
     <meta content="Copyright 2023 {{site.owner}}. All rights reserved." name="copyright"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
