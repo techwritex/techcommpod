@@ -13,14 +13,14 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 Сегодня предлагаю немного порассуждать над вопросом - нужен ли инженерам навык письма или достаточно иметь только технические знания?
 
-<!--more-->
-
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/011_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/011_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
+
+<!--more-->
 
 ### 00:00 - 02:06 Приветствие
 
