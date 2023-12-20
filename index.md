@@ -15,12 +15,12 @@ title:
       {% if post.excerpt %}
         {{ post.excerpt }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p><b>>> Слушать и читать</b></p>
+          <p><b>>> Слушать и читать дальше</b></p><br>
         </a>
       {% else %}
         {{ post.content }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p><b>>> Слушать и читать</b></p>
+          <p><b>>> Слушать и читать дальше</b></p><br>
         </a>
       {% endif %}
     </p>
