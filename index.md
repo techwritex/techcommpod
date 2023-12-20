@@ -15,7 +15,7 @@ title:
       {% if post.excerpt %}
         {{ post.excerpt }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p><b>Слушать и читать"</b></p>
+          <p><b>>> Слушать и читать</b></p>
         </a>
       {% else %}
         {{ post.content }}
