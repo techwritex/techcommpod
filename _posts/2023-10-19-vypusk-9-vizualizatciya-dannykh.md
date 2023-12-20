@@ -11,14 +11,14 @@ episode: "Визуализация даных"
 
 Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных. В  сегодняшнем выпуске рассмотрим визуализацию данных, как вид техкоммуникации. 
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/009_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/009_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 01:16 Приветствие
 

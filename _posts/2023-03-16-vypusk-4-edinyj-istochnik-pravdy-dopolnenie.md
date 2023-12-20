@@ -11,14 +11,14 @@ episode: "Дополнение по единому источнику правд
 
 Небольшое дополнение к [выпуску о едином источнике правды документации](https://techcommpod.ru/2023/02/16/vypusk-2-edinyj-istochnik-pravdy/).
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 00:51 Приветствие
 

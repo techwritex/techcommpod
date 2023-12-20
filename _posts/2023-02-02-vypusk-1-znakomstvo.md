@@ -13,15 +13,14 @@ episode: "Знакомство"
 Ну, хотя бы знаете, кто такие технические коммуникаторы? 
 Ладно, расслабьтесь. Послушайте первый выпуск и всё сразу поймёте.
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/001_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/001_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-
-<!--more-->
 
 ### 00:00 - 00:57 Вступление
 

@@ -11,14 +11,14 @@ episode: "Документация как код"
 
 Переход российских компаний на парадигму "документация как код" в части создания и сопровождения технической документации, а также для чего нужны и как написать понятные сообщения для git-коммитов.
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/005_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/005_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 00:52 Приветствие
 

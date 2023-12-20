@@ -11,14 +11,14 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 Отзыв на книгу Уильяма Зинсера "Как писать хорошо. Классическое руководство по созданию нехудожественных текстов".
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/003_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/003_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 00:54 Приветствие
 

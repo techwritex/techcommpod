@@ -13,14 +13,14 @@ episode: "Единый источник правды"
 Что такое единый источник правды? 
 Ответы на эти вопросы в данном выпуске подкаста.
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/002_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/002_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 00:59 Вступление
 

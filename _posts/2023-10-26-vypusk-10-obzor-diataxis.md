@@ -11,14 +11,14 @@ episode: "Выпуск #10. Обзор Diataxis (системный подход
 
 Diátaxis - подход структурирования и организации технической документации, который значительно упрощает работу с документацией как её разработчикам, так и читателям (пользователям). В  сегодняшнем выпуске представлен краткий обзор данного подхода.
 
+<!--more-->
+
 <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/010_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/010_episode_final.mp3"> Скачать файл </a>
     </audio>
 </figure>
-
-<!--more-->
 
 ### 00:00 - 01:56 Приветствие
 
