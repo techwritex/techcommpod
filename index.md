@@ -20,7 +20,7 @@ title:
       {% else %}
         {{ post.content }}
         <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
-          <p><b>Слушать и читать"</b></p>
+          <p><b>>> Слушать и читать</b></p><br>
         </a>
       {% endif %}
     </p>
