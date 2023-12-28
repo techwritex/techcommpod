@@ -15,6 +15,15 @@
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
     <item>
+      <title>Выпуск #12. Беседа с Ариной Балериной</title>
+      <description><![CDATA[<p>Уже не раз говорил, что пытаюсь вести просветительскую деятельность по развитию культуры осознанной работы с написанием документации у инженеров. Не всегда мои слова звучат убедительно, так как я не являюсь экспертом в данном вопросе.  Но под Новый год случилось чудо! Я нашёл такого эксперта, который поможет мне донести нужную информацию до инженеров. В сегодняшнем выпуске представляю запись беседы с Ариной - техническим коммуникатором с 20-летним опытом работы в IT.</p><p>Ссылки на книги:</p><p><a href="https://search.rsl.ru/ru/record/01005507282?ysclid=lql4144cf6611698317">«Разработка документации пользователя программного продукта» Юрий Кагарлицкий</a></p><p><a href="https://book.glvrd.ru/?ysclid=lql441k04w855380703">«Пиши, сокращай» Максим Ильяхов и Людмила Сарычева</a></p><p><a href="https://www.ozon.ru/category/chukovskiy-zhivoy-kak-zhizn/">«Живой Как Жизнь» Корней Чуковский</a></p><p><a href="https://www.youtube.com/watch?v=Mc2EK4LIBXQ&list=PLpTmN7QZ3j7zXLPjR7-AVdCyYbzp2zrlp">«Беседы о русском языке (1963)» Корней Чуковский</a></p><p>Контакты Арины:</p><p><a href="https://t.me/technicalwriters">Сообщество технических писателей</a></p><p><a href="https://getmentor.dev/mentor/arina-ballerina-1837">Профиль ментора</a></p>]]></description>
+      <pubDate>Thu, 28 Dec 2023 09:00:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/012_episode_final.mp3"
+                 type="audio/mpeg" length="61365282"/>
+      <itunes:duration>01:23:10</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-12-beseda-s-arinoj-ballerinoj/</guid>
+    </item>
+    <item>
       <title>Выпуск #11. Нужен ли инженерам навык письма?</title>
       <description><![CDATA[<p>Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае “Я только код пишу, мне этого достаточно.” И это печально, если честно. Сегодня предлагаю немного порассуждать над вопросом - нужен ли инженерам навык письма или достаточно иметь только технические знания?</p><p><a href="https://www.wiley.com/en-us/A+Guide+to+Writing+as+an+Engineer%2C+5th+Edition-p-9781119285960">A Guide to Writing as an Engineer, 5th Edition</a></p><p><a href="https://media.wiley.com/product_data/excerpt/68/11192859/1119285968-226.pdf">Chapter 1: Engineers and Writing</a></p><p><a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf">Today was a Good Day: The Daily Life of Software Developers</a></p><p><a href="https://www.amazon.com/Communication-Engineers-developers-communicators-productivity-ebook/dp/B08W8MJNF8">Communication for Engineers: A framework for software developers to become better communicators and increase their happiness, productivity, and impact</a></p>]]></description>
       <pubDate>Thu, 23 Nov 2023 09:00:00 GMT</pubDate>
