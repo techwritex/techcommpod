@@ -126,7 +126,9 @@ table, td, th {
   }
 
 .podcastButtonsEmbedPost {
-    padding-bottom: 20px
+    padding-bottom: 20px;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
 .podcastButtons img {
