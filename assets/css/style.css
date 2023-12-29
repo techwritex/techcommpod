@@ -125,6 +125,14 @@ table, td, th {
 	padding: 15px;
   }
 
+.podcastButtonsEmbedPost {
+    padding-bottom: 20px
+}
+
+.podcastButtons img {
+    max-width: 125px
+}
+
 /* #myblockquote {
 	margin: 0;
 	background: #F0F0F1;
