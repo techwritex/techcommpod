@@ -13,13 +13,6 @@ episode: "Дополнение по единому источнику правд
 
 <!--more-->
 
-<!-- <figure>
-    <figcaption></figcaption>
-    <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3">
-        <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3"> Скачать файл </a>
-    </audio>
-</figure> -->
-
 <iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
 
 {% include podcast_platforms.html %}

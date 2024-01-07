@@ -13,12 +13,7 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 <!--more-->
 
-<figure>
-    <figcaption></figcaption>
-    <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/003_episode_final.mp3">
-        <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/003_episode_final.mp3"> Скачать файл </a>
-    </audio>
-</figure>
+<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_003/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
 
 {% include podcast_platforms.html %}
 
