@@ -24,7 +24,7 @@ episode: "Дополнение по единому источнику правд
 
 <!-- {% include audio_player_layout.html %} -->
 
-<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="260px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
+<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="280px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
 
 ### 00:00 - 00:51 Приветствие
 
