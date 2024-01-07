@@ -13,18 +13,16 @@ episode: "Дополнение по единому источнику правд
 
 <!--more-->
 
-<figure>
+<!-- <figure>
     <figcaption></figcaption>
     <audio controls src="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3">
         <a href="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/004_episode_final.mp3"> Скачать файл </a>
     </audio>
-</figure>
-
-{% include podcast_platforms.html %}
-
-<!-- {% include audio_player_layout.html %} -->
+</figure> -->
 
 <iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
+
+{% include podcast_platforms.html %}
 
 ### 00:00 - 00:51 Приветствие
 
