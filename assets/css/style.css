@@ -255,12 +255,14 @@ table, td, th {
 }
 
 .info p {
+	font-family: 'poppins', sans-serif;
     font-size: 15px;
     color: #fff6;
     /* margin: 10px 0 10px; */
 }
 
 .info h2 {
+	font-family: 'poppins', sans-serif;
     margin: 10px 0 15px;
     color: white;
 }
