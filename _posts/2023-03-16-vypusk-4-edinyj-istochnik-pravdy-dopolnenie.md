@@ -22,11 +22,11 @@ episode: "Дополнение по единому источнику правд
 
 {% include podcast_platforms.html %}
 
-{% include audio_player_layout.html %}
+<!-- {% include audio_player_layout.html %} -->
 
 <!-- <iframe src="http://a0465301.xsph.ru/techcommpod/episodes/episode_004/" height="100%" width="200px" frameborder="no" scrolling="no" seamless></iframe> -->
 
-<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="200px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
+<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_004/index.html" height="340px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
 
 ### 00:00 - 00:51 Приветствие
 
