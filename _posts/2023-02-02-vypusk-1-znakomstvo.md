@@ -7,6 +7,7 @@ summary: Сколько русскоязычных подкастов о тех�
 categories: 
 comments: false
 episode: "Знакомство"
+episode_num: "001"
 ---
 
 Сколько русскоязычных подкастов о технических коммуникаторах Вы слушаете? Ну, хотя бы знаете, кто такие технические коммуникаторы? 
@@ -17,7 +18,7 @@ episode: "Знакомство"
 
 <iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_001/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
 
-{% include player_frame.html episode_num="001" %}
+{% include player_frame.html episode_num=post.episode_num %}
 
 {% include podcast_platforms.html %}
 
