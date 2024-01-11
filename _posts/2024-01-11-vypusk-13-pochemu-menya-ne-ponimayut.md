@@ -22,7 +22,7 @@ frame: "https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_013/index.
 
 {% include podcast_platforms.html %}
 
-{% include player_frame.html content=post.frame %}
+{% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_013/index.html" %}
 
 ### Расшифровка выпуска
 
