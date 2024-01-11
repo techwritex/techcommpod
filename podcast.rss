@@ -10,10 +10,19 @@
     <itunes:category text="Technology" />
     <itunes:explicit>false</itunes:explicit>
     <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих специалистов техкоммуникации, обмена опытом и лучшими практиками.</description>
-    <copyright>© 2023 Владимир Юсупов</copyright>
+    <copyright>© 2023-2024 Владимир Юсупов</copyright>
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.png"/>
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
+    <item>
+      <title>Выпуск #13. Почему меня не понимают?</title>
+      <description><![CDATA[<p>В жизни каждого из нас как в профессиональной сфере, так и в быту, очень часто встречаются ситуации, когда собеседники не понимают нас. В эти моменты мы задаёмся примерно такими вопросами - Почему меня не понимают? Как объяснять так, чтобы меня понимали? Сегодня немного порассуждаю на эту тему и постараюсь найти нужные ответы.</p><p>Ссылка на книгу:</p><p><a href="https://www.litres.ru/book/li-lefever/iskusstvo-obyasnyat-6183660/">«Искусство объяснять. Как сделать так, чтобы вас понимали с полуслова» Ли ЛеФевер (Lee LeFever)</a></p>]]></description>
+      <pubDate>Thu, 11 Jan 2024 01:00:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/013_episode_final.mp3"
+                 type="audio/mpeg" length="24250368"/>
+      <itunes:duration>19:41</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-13-pochemu-menya-ne-ponimayut/</guid>
+    </item>
     <item>
       <title>Выпуск #12. Беседа с Ариной Балериной</title>
       <description><![CDATA[<p>Уже не раз говорил, что пытаюсь вести просветительскую деятельность по развитию культуры осознанной работы с написанием документации у инженеров. Не всегда мои слова звучат убедительно, так как я не являюсь экспертом в данном вопросе.  Но под Новый год случилось чудо! Я нашёл такого эксперта, который поможет мне донести нужную информацию до инженеров. В сегодняшнем выпуске представляю запись беседы с Ариной - техническим коммуникатором с 20-летним опытом работы в IT.</p><p>Ссылки на книги:</p><p><a href="https://search.rsl.ru/ru/record/01005507282?ysclid=lql4144cf6611698317">«Разработка документации пользователя программного продукта» Юрий Кагарлицкий</a></p><p><a href="https://book.glvrd.ru/?ysclid=lql441k04w855380703">«Пиши, сокращай» Максим Ильяхов и Людмила Сарычева</a></p><p><a href="https://www.ozon.ru/category/chukovskiy-zhivoy-kak-zhizn/">«Живой Как Жизнь» Корней Чуковский</a></p><p><a href="https://www.youtube.com/watch?v=Mc2EK4LIBXQ&list=PLpTmN7QZ3j7zXLPjR7-AVdCyYbzp2zrlp">«Беседы о русском языке (1963)» Корней Чуковский</a></p><p>Контакты Арины:</p><p><a href="https://t.me/technicalwriters">Сообщество технических писателей</a></p><p><a href="https://getmentor.dev/mentor/arina-ballerina-1837">Профиль ментора</a></p>]]></description>
