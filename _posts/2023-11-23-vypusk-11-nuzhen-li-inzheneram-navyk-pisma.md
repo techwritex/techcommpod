@@ -15,7 +15,9 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 <!--more-->
 
-<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_011/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
+<!-- <iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_011/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe>  -->
+
+{% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_011/index.html" %}
 
 {% include podcast_platforms.html %}
 
