@@ -22,7 +22,7 @@ frame: "https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_013/index.
 
 {% include podcast_platforms.html %}
 
-{% include player_frame.html src=post.frame %}
+{% include player_frame.html content=post.frame %}
 
 ### Расшифровка выпуска
 
@@ -201,7 +201,7 @@ frame: "https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_013/index.
 
     - То есть я - не специалист по обезвреживанию мин или различных взрывчатых веществ. 
     - ... 
-    - SAP-ер - это такое производное слово от названия программного обеспечения (или просто программы, смотря кто спрашивает) с названием SAP. 
+    - SAP-ер - это такое производное слово от названия программы с названием SAP. 
     - А что это? - спрашивают меня снова.
 
 И тут как раз на помощь приходят аналогии. Ведь и правда, кто знает этот SAP? Но что же первое приходит в голову (лично мне)? 
