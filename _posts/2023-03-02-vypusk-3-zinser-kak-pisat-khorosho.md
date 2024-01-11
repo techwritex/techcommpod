@@ -13,7 +13,7 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 <!--more-->
 
-<iframe src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_003/index.html" height="300px" width="100%" frameborder="no" scrolling="no" seamless></iframe> 
+{% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_003/index.html" %}
 
 {% include podcast_platforms.html %}
 
