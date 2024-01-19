@@ -19,6 +19,18 @@ Diátaxis - подход структурирования и организац�
 
 {% include podcast_share_buttons.html %}
 
+### Полезные ссылки
+
+[diataxis.fr](https://diataxis.fr/)
+
+[Daniele Procida](https://vurt.org/)
+
+[Запись вебинара "Introducing the Diátaxis Approach to Technical Documentation"](https://www.brighttalk.com/webcast/9273/594742)
+
+<br>
+
+***
+
 ### Расшифровка выпуска
 
 #### 00:00 - 01:56 Приветствие
@@ -112,13 +124,5 @@ Diátaxis - подход структурирования и организац�
 С Вами был Владимир Юсупов. Подкаст технического коммуникатора Техкомпод. 
 
 Пока!
-
-### Ссылки
-
-[diataxis.fr](https://diataxis.fr/)
-
-[Daniele Procida](https://vurt.org/)
-
-[Запись вебинара "Introducing the Diátaxis Approach to Technical Documentation"](https://www.brighttalk.com/webcast/9273/594742)
 
 {% include podcast_subscribe_form_1.html %}

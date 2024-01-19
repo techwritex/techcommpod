@@ -19,6 +19,18 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 {% include podcast_share_buttons.html %}
 
+### Полезные ссылки
+
+#### Книги: 
+
+[«On Writing Well: The Classic Guide to Writing Nonfiction» William Zinsser](https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548)
+
+[«Как писать хорошо: Классическое руководство по созданию нехудожественных текстов» Уильям Зинсер](https://book.glvrd.ru/?ysclid=lql441k04w855380703)
+
+<br>
+
+***
+
 ### Расшифровка выпуска
 
 #### 00:00 - 00:54 Приветствие

@@ -21,6 +21,24 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 {% include podcast_share_buttons.html %}
 
+### Полезные ссылки
+
+#### Книги:
+
+[A Guide to Writing as an Engineer, 5th Edition](https://www.wiley.com/en-us/A+Guide+to+Writing+as+an+Engineer%2C+5th+Edition-p-9781119285960)
+
+[Chapter 1: Engineers and Writing](https://media.wiley.com/product_data/excerpt/68/11192859/1119285968-226.pdf)
+
+[Communication for Engineers: A framework for software developers to become better communicators and increase their happiness, productivity, and impact](https://www.amazon.com/Communication-Engineers-developers-communicators-productivity-ebook/dp/B08W8MJNF8)
+
+#### Исследовательская работа:
+
+[Today was a Good Day: The Daily Life of Software Developers](https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf)
+
+<br>
+
+***
+
 ### Расшифровка выпуска
 
 #### 00:00 - 02:06 Приветствие
@@ -260,15 +278,5 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 С Вами был Владимир Юсупов. Подкаст технического коммуникатора Техкомпод. 
 
 Пока!
-
-### Ссылки
-
-[A Guide to Writing as an Engineer, 5th Edition](https://www.wiley.com/en-us/A+Guide+to+Writing+as+an+Engineer%2C+5th+Edition-p-9781119285960)
-
-[Chapter 1: Engineers and Writing](https://media.wiley.com/product_data/excerpt/68/11192859/1119285968-226.pdf)
-
-[Today was a Good Day: The Daily Life of Software Developers](https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf)
-
-[Communication for Engineers: A framework for software developers to become better communicators and increase their happiness, productivity, and impact](https://www.amazon.com/Communication-Engineers-developers-communicators-productivity-ebook/dp/B08W8MJNF8)
 
 {% include podcast_subscribe_form_1.html %}

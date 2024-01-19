@@ -19,6 +19,16 @@ episode: "Визуализация даных"
 
 {% include podcast_share_buttons.html %}
 
+### Полезные ссылки
+
+#### Книга: 
+
+[«Information Dashboard Design: The Effective Visual Communication of Data» Stephen Few](http://public.magendanz.com/Temp/Information%20Dashboard%20Design.pdf)
+
+<br>
+
+***
+
 ### Расшифровка выпуска
 
 #### 00:00 - 01:16 Приветствие
