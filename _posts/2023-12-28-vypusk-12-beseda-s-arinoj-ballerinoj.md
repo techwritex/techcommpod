@@ -21,6 +21,8 @@ episode: "Выпуск #12. Беседа с Ариной Балериной"
 
 {% include podcast_platforms.html %}
 
+{% include podcast_share_buttons.html %}
+
 ### Расшифровка выпуска
 
 **Вступление:**

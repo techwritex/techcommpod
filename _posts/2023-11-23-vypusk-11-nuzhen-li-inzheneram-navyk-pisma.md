@@ -19,6 +19,8 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 {% include podcast_platforms.html %}
 
+{% include podcast_share_buttons.html %}
+
 ### Расшифровка выпуска
 
 #### 00:00 - 02:06 Приветствие

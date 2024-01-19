@@ -17,6 +17,8 @@ episode: "Документация как код"
 
 {% include podcast_platforms.html %}
 
+{% include podcast_share_buttons.html %}
+
 ### Расшифровка выпуска
 
 #### 00:00 - 00:52 Приветствие

@@ -21,6 +21,8 @@ episode: "Выпуск #13. Почему меня не понимают?"
 
 {% include podcast_platforms.html %}
 
+{% include podcast_share_buttons.html %}
+
 ### Расшифровка выпуска
 
 #### 00:00 - 03:34 Приветствие

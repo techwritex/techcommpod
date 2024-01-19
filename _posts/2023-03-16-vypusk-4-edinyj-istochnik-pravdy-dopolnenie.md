@@ -17,6 +17,8 @@ episode: "Дополнение по единому источнику правд
 
 {% include podcast_platforms.html %}
 
+{% include podcast_share_buttons.html %}
+
 ### Расшифровка выпуска
 
 #### 00:00 - 00:51 Приветствие
