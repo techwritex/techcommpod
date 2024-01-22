@@ -19,10 +19,6 @@ episode: "Выпуск #12. Беседа с Ариной Балериной"
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_012/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книги: 
@@ -44,6 +40,10 @@ episode: "Выпуск #12. Беседа с Ариной Балериной"
 [Профиль ментора](https://getmentor.dev/mentor/arina-ballerina-1837)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

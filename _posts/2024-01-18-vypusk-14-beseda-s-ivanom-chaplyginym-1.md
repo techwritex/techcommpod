@@ -23,10 +23,6 @@ episode: "Выпуск #14. Беседа с Иваном Чаплыгиным (�
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_014/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книга:
@@ -40,6 +36,10 @@ episode: "Выпуск #14. Беседа с Иваном Чаплыгиным (�
 Ник: [@agrio_chivas](https://t.me/agrio_chivas)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

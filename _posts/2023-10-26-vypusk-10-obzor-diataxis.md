@@ -15,10 +15,6 @@ Diátaxis - подход структурирования и организац�
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_010/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 [diataxis.fr](https://diataxis.fr/)
@@ -28,6 +24,10 @@ Diátaxis - подход структурирования и организац�
 [Запись вебинара "Introducing the Diátaxis Approach to Technical Documentation"](https://www.brighttalk.com/webcast/9273/594742)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

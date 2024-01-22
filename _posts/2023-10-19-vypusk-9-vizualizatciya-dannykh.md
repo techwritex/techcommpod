@@ -15,10 +15,6 @@ episode: "Визуализация даных"
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_009/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книга: 
@@ -26,6 +22,10 @@ episode: "Визуализация даных"
 [«Information Dashboard Design: The Effective Visual Communication of Data» Stephen Few](http://public.magendanz.com/Temp/Information%20Dashboard%20Design.pdf)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

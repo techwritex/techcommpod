@@ -17,10 +17,6 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_011/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книги:
@@ -36,6 +32,10 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 [Today was a Good Day: The Daily Life of Software Developers](https://www.microsoft.com/en-us/research/uploads/prod/2019/04/devtime-preprint-TSE19.pdf)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

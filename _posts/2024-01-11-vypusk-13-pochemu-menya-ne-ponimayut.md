@@ -19,10 +19,6 @@ episode: "Выпуск #13. Почему меня не понимают?"
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_013/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книга: 
@@ -30,6 +26,10 @@ episode: "Выпуск #13. Почему меня не понимают?"
 [Искусство объяснять. Как сделать так, чтобы вас понимали с полуслова](https://www.litres.ru/book/li-lefever/iskusstvo-obyasnyat-6183660/)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 

@@ -15,10 +15,6 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 {% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_003/index.html" %}
 
-{% include podcast_platforms.html %}
-
-{% include podcast_share_buttons.html %}
-
 ### Полезные ссылки
 
 #### Книги: 
@@ -28,6 +24,10 @@ episode: "Уильям Зинсер. Как писать хорошо"
 [«Как писать хорошо: Классическое руководство по созданию нехудожественных текстов» Уильям Зинсер](https://book.glvrd.ru/?ysclid=lql441k04w855380703)
 
 <br>
+
+{% include podcast_platforms.html %}
+
+{% include podcast_share_buttons.html %}
 
 ***
 
