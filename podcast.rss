@@ -15,6 +15,15 @@
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
     <item>
+      <title>Выпуск #17. Юзабилити документации</title>
+      <description><![CDATA[<p>Жизненный цикл разработки любого продукта включает в себя этап тестирования. Более того, тестировать нужно не только функциональность, но и удобство использования (юзабилити). Документация, как продукт, не является исключением.</p><p>В сегодняшнем выпуске затрагиваю такую тему, как тестирование удобства использования (usability testing) пользовательской документации.</p><p><strong>Ссылки:</strong></p><p><a href="https://www.brighttalk.com/webcast/9273/601718">«An Easy Way To Dramatically Improve Technical Documentation Quality» (George Eckel)</a></p><p><a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/">«Why You Only Need to Test with 5 Users» (Jakob Nielsen)</a></p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
+      <pubDate>Tue, 20 Feb 2024 01:00:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/017_episode_final.mp3"
+                 type="audio/mpeg" length="17521456"/>
+      <itunes:duration>16:02</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-17-usability-dokumentatcii/</guid>
+    </item>
+    <item>
       <title>Выпуск #16. Понятная инструкция</title>
       <description><![CDATA[<p>В процессе выполнения одной из основных задач на работе в прошлом году довелось изучить различное программное обеспечение по разработке хранилищ данных, а также документацию к нему. Так плохо написанной документации - в частности, инструкции для администраторов и пользователей - я ещё не встречал. Что больше всего меня опечалило, так это то, что практически всю эту документацию писали инженеры - разработчики продуктов.</p><p>Мне стало до того горько и обидно, что я решил написать небольшую инструкцию по написанию инструкций для инженеров, которая хоть как-то могла бы улучшить сложившуюся ситуацию.</p><p>В сегодняшнем выпуске представляю аудио-версию моей небольшой работы «Как написать понятную инструкцию. Опыт инженера».</p><p><strong>Ссылки:</strong></p><p><a href="https://www.litres.ru/book/vladimir-usupov/kak-napisat-ponyatnuu-instrukciu-opyt-inzhenera-70130746/">Как написать понятную инструкцию. Опыт инженера</a></p><p>ГОСТ Р 2.601-2019 Единая система конструкторской документации. Эксплуатационные документы</p><p>Бабайцева В.В. Русский язык. Теория. 5 - 11 классы</p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
       <pubDate>Fri, 02 Feb 2024 01:00:00 GMT</pubDate>
