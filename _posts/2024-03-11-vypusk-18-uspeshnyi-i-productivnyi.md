@@ -142,7 +142,7 @@ episode: "Выпуск #18. Успешный и продуктивный"
 
 <p>
     <figure>
-        <img src="{{ "../assets/images/my_habbits_1.jpeg" }}" alt="Пример формирования ежедневной привычки по исходному трекеру" style="border: 0px solid #D3D3D3;"/>
+        <img src="{{ "../assets/images/my_habbits_1.jpeg" }}" alt="Пример формирования ежедневной привычки по исходному трекеру" style="border: 0px solid #D3D3D3; width:100%"/>
         <figcaption style="color: #6c6c6c; text-align: center;">Рисунок 1. Пример формирования ежедневной привычки по исходному трекеру</figcaption>
     </figure>
 </p>
@@ -160,7 +160,7 @@ episode: "Выпуск #18. Успешный и продуктивный"
 
 <p>
     <figure>
-        <img src="{{ "../assets/images/my_habbits_2.jpeg" }}" alt="Пример формирования ежедневной привычки по адаптированному трекеру" style="border: 0px solid #D3D3D3;"/>
+        <img src="{{ "../assets/images/my_habbits_2.jpeg" }}" alt="Пример формирования ежедневной привычки по адаптированному трекеру" style="border: 0px solid #D3D3D3; width:100%"/>
         <figcaption style="color: #6c6c6c; text-align: center;">Рисунок 2. Пример формирования ежедневной привычки по адаптированному трекеру</figcaption>
     </figure>
 </p>
