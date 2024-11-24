@@ -15,6 +15,15 @@
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
     <item>
+      <title>Выпуск #22. Беседа с Владимиром Лагутинским</title>
+      <description><![CDATA[<p>В сегодняшнем выпуске затронуты вопросы, напрямую или косвенно связанные с замещением зарубежного ПО для создания BI-решений, в частности, линейки продуктов SAP для BI-решений. Какие изменения ожидать консультантам SAP BI в связи с использованием новых инструментов и технологий в их работе? Как формировать и управлять дата-командами тимлидам в новых условиях? Какие тенденции в мире данных сейчас вообще прослеживаются? Разобраться во всех этих вопросах мне помог Владимир Лагутинский, опытный руководитель дата-подразделений различного уровня, как в российских, так и зарубежных компаниях.</p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
+      <pubDate>Sun, 24 Nov 2024 01:01:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/022_episode_final.mp3"
+                 type="audio/mpeg" length="53790924"/>
+      <itunes:duration>64:43</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-22-beseda-s-vladimirom-lagutinskim/</guid>
+    </item>
+    <item>
       <title>Выпуск #21. Инженеры-аналитики и dbt</title>
       <description><![CDATA[<p>Мир данных уже не тот. Как и всё вокруг нас меняется с немыслимой скоростью, мир данных очень сильно изменился, особенно за последние несколько лет. Если 10–15 лет назад тенденция была такова, что от специалиста требовалось наличие широкого спектра навыков, то ситуация поменялась кардинальным образом – сейчас в тренде узкая специализация. Это приводит к некоторым изменениям в существующих профессиях, а также к появлению новых профессий. Об одной из таких профессий в сегодняшнем выпуске.</p><p><strong>Рекомендованные источники:</strong></p><p>Сайт инструмента (в том числе, документация) - www.getdbt.com</p><p>Roberto Zagni «Data Engineering with dbt: A practical guide to building a cloud-based, pragmatic, and dependable data platform with SQL»</p><p>Dumky De Wilde и др. «Fundamentals of Analytics Engineering: An introduction to building end-to-end analytics solutions»</p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
       <pubDate>Thu, 19 Sep 2024 01:01:00 GMT</pubDate>
