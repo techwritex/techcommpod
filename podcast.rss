@@ -10,10 +10,20 @@
     <itunes:category text="Technology" />
     <itunes:explicit>false</itunes:explicit>
     <description>Подкаст технического коммуникатора создан для развития сообщества русскоговорящих специалистов техкоммуникации, обмена опытом и лучшими практиками.</description>
-    <copyright>© 2023-2024 Владимир Юсупов</copyright>
+    <copyright>© 2023-2025 Владимир Юсупов</copyright>
     <itunes:image href="https://techcommpod.ru/assets/images/techcommpod_logo.png"/>
     <language>ru</language>
     <link>https://techcommpod.ru/</link>
+    <item>
+      <title>Выпуск #23. Теоретические и практические аспекты дружбы</title>
+      <description><![CDATA[<p>Все ли друзья одинаковы? Сколько друзей может быть? Сколько времени требуется, чтобы стать близким другом? В конце концов, кого можно назвать другом? В сегодняшнем выпуске рассмотрим теоретические и практические аспекты дружбы.</p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
+      <pubDate>Mon, 07 Apr 2025 01:01:00 GMT</pubDate>
+      <enclosure url="https://techcommpod.s3.eu-north-1.amazonaws.com/episodes/023_episode_final.mp3"
+                 type="audio/mpeg" length="24492283"/>
+      <itunes:duration>23:13</itunes:duration>
+      <guid isPermaLink="true">https://techcommpod.ru/vypusk-23-teoreticheskie-i-prakticheskie-aspekty-druzhby/</guid>
+    </item>
+    <item>
     <item>
       <title>Выпуск #22. Беседа с Владимиром Лагутинским</title>
       <description><![CDATA[<p>В сегодняшнем выпуске затронуты вопросы, напрямую или косвенно связанные с замещением зарубежного ПО для создания BI-решений, в частности, линейки продуктов SAP для BI-решений. Какие изменения ожидать консультантам SAP BI в связи с использованием новых инструментов и технологий в их работе? Как формировать и управлять дата-командами тимлидам в новых условиях? Какие тенденции в мире данных сейчас вообще прослеживаются? Разобраться во всех этих вопросах мне помог Владимир Лагутинский, опытный руководитель дата-подразделений различного уровня, как в российских, так и зарубежных компаниях.</p><p><strong>Примечание:</strong></p><p>Текстовую расшифровку выпуска читайте на сайте подкаста.</p>]]></description>
