@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 
+title: О подкасте
 permalink: /about/
 ---
 
