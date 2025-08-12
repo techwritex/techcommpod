@@ -240,4 +240,8 @@ episode: "Выпуск #13. Почему меня не понимают?"
 
 Пока!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

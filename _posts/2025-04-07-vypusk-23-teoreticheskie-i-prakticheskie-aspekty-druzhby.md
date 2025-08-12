@@ -224,4 +224,8 @@ episode: "Выпуск #23. Теоретические и практически
 
 До встречи!  
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

@@ -281,4 +281,8 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 
 Пока!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

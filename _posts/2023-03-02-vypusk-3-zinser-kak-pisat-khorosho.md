@@ -184,4 +184,8 @@ episode: "Уильям Зинсер. Как писать хорошо"
 
 Пока!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

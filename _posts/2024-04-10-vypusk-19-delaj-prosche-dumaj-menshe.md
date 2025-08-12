@@ -129,4 +129,8 @@ episode: "Выпуск #19. Делай проще, думай меньше"
 
 До встречи!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

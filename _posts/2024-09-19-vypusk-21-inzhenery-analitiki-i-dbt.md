@@ -211,5 +211,8 @@ dbt прекрасно интегрируется с Git. При этом каж
 
 С Вами был Владимир Юсупов. Подкаст технического коммуникатора Техкомпод. До встречи! 
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
 
 {% include podcast_subscribe_form_1.html %}

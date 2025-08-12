@@ -235,4 +235,8 @@ episode: "Выпуск #24. Беседа с Екатериной Павлово�
 
 До встречи!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

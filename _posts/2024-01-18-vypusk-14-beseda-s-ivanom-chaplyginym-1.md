@@ -271,4 +271,8 @@ episode: "Выпуск #14. Беседа с Иваном Чаплыгиным (�
 
 До встречи!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}

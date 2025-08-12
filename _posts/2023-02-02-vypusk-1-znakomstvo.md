@@ -218,4 +218,8 @@ Cреди них:
 
 С Вами был Владимир Юсупов и подкаст технического коммуникатора Техкомпод. Пока!
 
+<br>
+
+{% include podcast_share_buttons_bottom.html %}
+
 {% include podcast_subscribe_form_1.html %}
