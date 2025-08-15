@@ -171,7 +171,7 @@ td {
 .related-episode {
 	border: 1px solid gray;
 	border-width: thin;
-	border-radius: 1em;
+	border-radius: 0.5em;
 }
 
 .related-episode .episode-title {
