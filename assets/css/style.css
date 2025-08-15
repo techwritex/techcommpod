@@ -158,8 +158,8 @@ td {
 
 .related-episodes-title {
 	color: #000;
-	margin-bottom: 40px;
-	/* font-size: 24px; */
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 .related-episodes {
@@ -178,13 +178,13 @@ td {
 	font-weight: bold;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 850px) {
 	.related-episodes {
 		grid-template-columns: 1fr;
 	}
 
 	.related-episodes-container {
-		max-width: 400px;
+		max-width: 100%;
 	}
 
 }
