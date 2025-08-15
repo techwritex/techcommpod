@@ -147,12 +147,12 @@ td {
 .related-episodes-container {
 	width: 800px;
 	font-family: 'Cutive Mono', serif; 
-	margin: 10px auto;
+	margin: 10px auto; 
 }
 
 .related-episode img {
-	width: 100%;
-	height: 160px;
+	width: 250px; 
+	height: 250px;
 	object-fit: cover;
 }
 
