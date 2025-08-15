@@ -178,6 +178,10 @@ td {
 	font-weight: bold;
 }
 
+.episode-title a {
+	text-decoration: none;
+}
+
 @media (max-width: 850px) {
 	.related-episodes {
 		grid-template-columns: 1fr;
