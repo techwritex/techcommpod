@@ -169,22 +169,34 @@ td {
 }
 
 .related-episode {
-	/* box-shadow: 0 4px 12px --2px rgba(0, 0, 0, 0.2); */
 	border: 1px solid gray;
 	border-width: thin;
+	border-radius: 1em;
 }
 
 .related-episode .episode-title {
 	text-decoration: none;
 	color: #000;
 	font-size: 18px;
-	padding: 16px;
+	/* padding: 16px; */
 	display: inline-block;
 	line-height: 1.6;
 	font-weight: bold;
 }
 
 .related-episode a:link {
+	text-decoration: none;
+}
+
+.related-episode a:visited {
+	text-decoration: none;
+}
+
+.related-episode a:hover {
+	text-decoration: none;
+}
+
+.related-episode a:active {
 	text-decoration: none;
 }
 
