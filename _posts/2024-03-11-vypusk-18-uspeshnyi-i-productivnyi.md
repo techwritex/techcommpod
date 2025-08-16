@@ -196,6 +196,6 @@ episode_number: "Выпуск #12"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% include related_episodes.html episode_number_param="Выпуск #12" %}
+{% include related_episodes.html episode_number_param= {{ post.episode_number }} %}
 
 {% include podcast_subscribe_form_1.html %}
