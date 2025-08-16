@@ -144,15 +144,12 @@ td {
 	max-width: 125px
 }
 
-@media (max-width: 640px) {
-	.related-episodes {
-		grid-template-columns: 1fr;
-	}
-
-	.related-episodes-container {
-		max-width: 400px;
-	}
-
+.related-episode {
+	width: 96%;
+	padding: 0.5em; 
+	background-color: white; 
+	border: 1px solid gray; 
+	border-radius: 10px;
 }
 
 /* custom style end*/
