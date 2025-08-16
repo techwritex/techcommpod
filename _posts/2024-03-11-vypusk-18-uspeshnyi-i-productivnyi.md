@@ -207,9 +207,9 @@ related_episode_3_intro: "описание"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% if page.related_episode_1_link %}
+{% if page.related_episode_1_link and page.related_episode_1_number %}
 
-{% include related_episodes.html episode_1_link=page.related_episode_1_link %}
+{% include related_episodes.html episode_1_link=page.related_episode_1_link episode_1_number=page.related_episode_1_number %}
 
 {% endif %}
 
