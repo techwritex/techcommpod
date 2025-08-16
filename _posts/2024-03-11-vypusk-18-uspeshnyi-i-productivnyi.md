@@ -18,7 +18,7 @@ related_episode_2_intro_param: "описание"
 related_episode_3_link_param: "https://techcommpod.ru"
 related_episode_3_number_param: "номер"
 related_episode_3_title_param: "заголовок" 
-related_episode_4_intro_param: "описание"
+related_episode_3_intro_param: "описание"
 ---
 
 Успешный и продуктивный инженер, успешный и продуктивный технический писатель, успешный и продуктивный переводчик и т.д. Многие из нас хотят быть успешными и продуктивными. 
