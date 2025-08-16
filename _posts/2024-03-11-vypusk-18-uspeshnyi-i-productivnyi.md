@@ -207,27 +207,4 @@ related_episode_3_intro: "описание"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
-
-{% include related_episodes.html 
-
-episode_1_link=page.related_episode_1_link 
-episode_1_number=page.related_episode_1_number 
-episode_1_title=page.related_episode_1_title 
-episode_1_intro=page.related_episode_1_intro 
-
-episode_2_link=page.related_episode_2_link 
-episode_2_number=page.related_episode_2_number 
-episode_2_title=page.related_episode_2_title 
-episode_2_intro=page.related_episode_2_intro 
-
-episode_3_link=page.related_episode_3_link 
-episode_3_number=page.related_episode_3_number 
-episode_3_title=page.related_episode_3_title 
-episode_3_intro=page.related_episode_3_intro 
-
-%}
-
-{% endif %}
-
 {% include podcast_subscribe_form_1.html %}
