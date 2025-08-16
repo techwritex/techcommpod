@@ -7,7 +7,7 @@ summary: Успешный и продуктивный инженер, успеш
 categories: 
 comments: false
 episode: "Выпуск #18. Успешный и продуктивный"
-episode_number: "Выпуск #12"
+related_episode_1_link_param: "https://techwritex.ru"
 ---
 
 Успешный и продуктивный инженер, успешный и продуктивный технический писатель, успешный и продуктивный переводчик и т.д. Многие из нас хотят быть успешными и продуктивными. 
@@ -196,6 +196,10 @@ episode_number: "Выпуск #12"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% include related_episodes.html episode_number_param= {{ post.episode_number }} %}
+{% if page.related_episode_1_link_param %}
+
+{% include related_episodes.html related_episode_1_link=page.related_episode_1_link_param related_episode_1_number="Выпуск #12" related_episode_1_title="Нужен ли инженерам навык письма?" related_episode_1_intro="Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно." related_episode_2_link="#" related_episode_2_number="Выпуск #13" related_episode_2_title="Нужен ли инженерам навык письма?" related_episode_2_intro="Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно." related_episode_3_link="#" related_episode_3_number="Выпуск #14" related_episode_3_title="Нужен ли инженерам навык письма?" related_episode_3_intro="Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно." %}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
