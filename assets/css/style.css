@@ -144,62 +144,6 @@ td {
 	max-width: 125px
 }
 
-.related-episodes-container {
-	width: 800px;
-	font-family: 'Cutive Mono', serif; 
-	margin: 10px auto; 
-}
-
-.related-episode img {
-	width: 240px; 
-	height: 160px;
-	object-fit: cover;
-}
-
-.related-episodes-title {
-	color: #000;
-	margin-bottom: 20px;
-	font-weight: bold;
-}
-
-.related-episodes {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 20px;
-}
-
-.related-episode {
-	border: 1px solid gray;
-	border-width: thin;
-	border-radius: 0.5em;
-}
-
-.related-episode .episode-title {
-	text-decoration: none;
-	color: #000;
-	font-size: 16px;
-	padding: 14px;
-	display: inline-block;
-	line-height: 1.6;
-	font-weight: bold;
-}
-
-.related-episode a:link {
-	text-decoration: none;
-}
-
-.related-episode a:visited {
-	text-decoration: none;
-}
-
-.related-episode a:hover {
-	text-decoration: none;
-}
-
-.related-episode a:active {
-	text-decoration: none;
-}
-
 @media (max-width: 640px) {
 	.related-episodes {
 		grid-template-columns: 1fr;
