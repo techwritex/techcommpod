@@ -195,8 +195,6 @@ episode: "Выпуск #18. Успешный и продуктивный"
 
 {% include podcast_share_buttons_bottom.html %}
 
-<br>
-
 {% include related_episodes.html %}
 
 {% include podcast_subscribe_form_1.html %}
