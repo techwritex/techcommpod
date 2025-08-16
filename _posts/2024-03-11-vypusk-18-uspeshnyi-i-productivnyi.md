@@ -7,18 +7,18 @@ summary: Успешный и продуктивный инженер, успеш
 categories: 
 comments: false
 episode: "Выпуск #18. Успешный и продуктивный"
-related_episode_1_link_param: "https://techwritex.ru"
-related_episode_1_number_param: "Выпуск #12"
-related_episode_1_title_param: "Нужен ли инженерам навык письма?" 
-related_episode_1_intro_param: "Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно."
-related_episode_2_link_param: "https://dwh-book.ru"
-related_episode_2_number_param: "номер"
-related_episode_2_title_param: "заголовок" 
-related_episode_2_intro_param: "описание"
-related_episode_3_link_param: "https://techcommpod.ru"
-related_episode_3_number_param: "номер"
-related_episode_3_title_param: "заголовок" 
-related_episode_3_intro_param: "описание"
+related_episode_1_link: "https://techwritex.ru"
+related_episode_1_number: "Выпуск #12"
+related_episode_1_title: "Нужен ли инженерам навык письма?" 
+related_episode_1_intro: "Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно."
+related_episode_2_link: "https://dwh-book.ru"
+related_episode_2_number: "номер"
+related_episode_2_title: "заголовок" 
+related_episode_2_intro: "описание"
+related_episode_3_link: "https://techcommpod.ru"
+related_episode_3_number: "номер"
+related_episode_3_title: "заголовок" 
+related_episode_3_intro: "описание"
 ---
 
 Успешный и продуктивный инженер, успешный и продуктивный технический писатель, успешный и продуктивный переводчик и т.д. Многие из нас хотят быть успешными и продуктивными. 
@@ -207,9 +207,9 @@ related_episode_3_intro_param: "описание"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% if page.related_episode_1_link_param and page.related_episode_1_number_param and page.related_episode_1_title_param and page.related_episode_1_intro_param and page.related_episode_2_link_param and page.related_episode_2_number_param and page.related_episode_2_title_param and page.related_episode_2_intro_param page.related_episode_3_link_param and page.related_episode_3_number_param and page.related_episode_3_title_param and page.related_episode_3_intro_param %}
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
 
-{% include related_episodes.html related_episode_1_link=page.related_episode_1_link_param related_episode_1_number=page.related_episode_1_number_param related_episode_1_title=page.related_episode_1_title_param related_episode_1_intro=page.related_episode_1_intro_param related_episode_2_link=page.related_episode_2_link_param related_episode_2_number=page.related_episode_2_number_param related_episode_2_title=page.related_episode_2_title_param related_episode_2_intro=page.related_episode_2_intro_param related_episode_3_link=page.related_episode_3_link_param related_episode_3_number=page.related_episode_3_number_param related_episode_3_title=page.related_episode_3_title_param related_episode_3_intro=page.related_episode_3_intro_param %}
+{% include related_episodes.html episode_1_link=page.related_episode_1_link episode_1_number=page.related_episode_1_number episode_1_title=page.related_episode_1_title episode_1_intro=page.related_episode_1_intro episode_2_link=page.related_episode_2_link episode_2_number=page.related_episode_2_number episode_2_title=page.related_episode_2_title episode_2_intro=page.related_episode_2_intro episode_3_link=page.related_episode_3_link episode_3_number=page.related_episode_3_number episode_3_title=page.related_episode_3_title episode_3_intro=page.related_episode_3_intro %}
 
 {% endif %}
 
