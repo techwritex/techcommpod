@@ -7,6 +7,7 @@ summary: Успешный и продуктивный инженер, успеш
 categories: 
 comments: false
 episode: "Выпуск #18. Успешный и продуктивный"
+episode_number: "Выпуск #12"
 ---
 
 Успешный и продуктивный инженер, успешный и продуктивный технический писатель, успешный и продуктивный переводчик и т.д. Многие из нас хотят быть успешными и продуктивными. 
@@ -195,6 +196,6 @@ episode: "Выпуск #18. Успешный и продуктивный"
 
 {% include podcast_share_buttons_bottom.html %}
 
-{% include related_episodes.html %}
+{% include related_episodes.html episode_number_param={{episode_number}} %}
 
 {% include podcast_subscribe_form_1.html %}
