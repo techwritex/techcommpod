@@ -7,18 +7,18 @@ summary: Успешный и продуктивный инженер, успеш
 categories: 
 comments: false
 episode: "Выпуск #18. Успешный и продуктивный"
-related_episode_1_link: "https://techwritex.ru"
-related_episode_1_number: "Выпуск #12"
+related_episode_1_link: "https://techcommpod.ru/vypusk-11-nuzhen-li-inzheneram-navyk-pisma/"
+related_episode_1_number: "Выпуск #11"
 related_episode_1_title: "Нужен ли инженерам навык письма?" 
 related_episode_1_intro: "Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно."
-related_episode_2_link: "https://dwh-book.ru"
-related_episode_2_number: "номер"
-related_episode_2_title: "заголовок" 
-related_episode_2_intro: "описание"
-related_episode_3_link: "https://techcommpod.ru"
-related_episode_3_number: "номер"
-related_episode_3_title: "заголовок" 
-related_episode_3_intro: "описание"
+related_episode_2_link: "https://techcommpod.ru/vypusk-19-delaj-prosche-dumaj-menshe/"
+related_episode_2_number: "Выпуск #19"
+related_episode_2_title: "Делай проще, думай меньше" 
+related_episode_2_intro: "Делай проще, чтобы поняли, да и сам думай меньше, задачу закрыть надо... Мысли о тенденции упрощения всего в нашей жизни и о том, какое участие принимают в этом процессе инженеры, техписатели многие другие."
+related_episode_3_link: "https://techcommpod.ru/vypusk-21-inzhenery-analitiki-i-dbt/"
+related_episode_3_number: "Выпуск #21"
+related_episode_3_title: "Инженеры-аналитики и dbt" 
+related_episode_3_intro: "Всё вокруг нас меняется с немыслимой скоростью, мир данных очень сильно изменился. Если раньше от специалиста требовалось наличие широкого спектра навыков, то сейчас в тренде узкая специализация. Это приводит к появлению новых профессий."
 ---
 
 Успешный и продуктивный инженер, успешный и продуктивный технический писатель, успешный и продуктивный переводчик и т.д. Многие из нас хотят быть успешными и продуктивными. 
