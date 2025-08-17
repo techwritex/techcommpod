@@ -7,6 +7,18 @@ summary: Абсолютное большинство инженеров вооб
 categories: 
 comments: false
 episode: "Выпуск #11. Нужен ли инженерам навык письма?"
+related_episode_1_link: "https://techcommpod.ru/vypusk-3-zinser-kak-pisat-khorosho/"
+related_episode_1_number: "Выпуск #3"
+related_episode_1_title: "Уильям Зинсер. Как писать хорошо" 
+related_episode_1_intro: "Небольшой отзыв о книге Уильяма Зинсера «Как писать хорошо. Классическое руководство по созданию нехудожественных текстов»."
+related_episode_2_link: "https://techcommpod.ru/vypusk-16-ponyatnaya-instruktsiya/"
+related_episode_2_number: "Выпуск #16"
+related_episode_2_title: "Понятная инструкция" 
+related_episode_2_intro: "Аудио-версия небольшой книги «Как написать понятную инструкцию. Опыт инженера», котороая родилась в результате выполнения задач в рамках импортозамещения."
+related_episode_3_link: "https://techcommpod.ru/vypusk-17-usability-dokumentatcii/"
+related_episode_3_number: "Выпуск #17"
+related_episode_3_title: "Юзабилити документации" 
+related_episode_3_intro: "Жизненный цикл разработки любого продукта включает в себя этап тестирования. Тестировать нужно не только функциональность, но и удобство использования (юзабилити). Документация, как продукт, не является исключением."
 ---
 
 Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: "Я только код пишу, мне этого достаточно." И это печально, если честно. 
@@ -284,5 +296,28 @@ episode: "Выпуск #11. Нужен ли инженерам навык пис
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
