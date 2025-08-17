@@ -7,6 +7,18 @@ summary: Восхищаюсь практически каждой историе
 categories: 
 comments: false
 episode: "Выпуск #20. Беседа с Константином Макушевым"
+related_episode_1_link: "https://techcommpod.ru/vypusk-10-obzor-diataxis/"
+related_episode_1_number: "Выпуск #10"
+related_episode_1_title: "Обзор Diataxis" 
+related_episode_1_intro: "Diátaxis - подход структурирования и организации технической документации, который значительно упрощает работу с документацией как её разработчикам, так и читателям. В выпуске представлен краткий обзор данного подхода."
+related_episode_2_link: "https://techcommpod.ru/vypusk-24-beseda-s-ekaterinoi-pavlovoi/"
+related_episode_2_number: "Выпуск #24"
+related_episode_2_title: "Беседа с Екатериной Павловой" 
+related_episode_2_intro: "Когда-то давным-давно меня пугали, что если я буду делиться своими сокровенными знаниями, то стану ненужным и меня уволят. Но стоит ли бояться делиться своими знаниями? Если нет, то как организовать процесс передачи и накопления знаний?"
+related_episode_3_link: "https://techcommpod.ru/vypusk-25-beseda-s-dmitriem-razvozzhaevym/"
+related_episode_3_number: "Выпуск #25"
+related_episode_3_title: "Беседа с Дмитрием Развозжаевым" 
+related_episode_3_intro: "Нас постоянно пугают восстанием машин в виде «искусственного интеллекта» (ИИ). Что такое ИИ - благо или зло? Как развитие ИИ сказывается на профессиональной сфере техписателей?"
 ---
 
 Восхищаюсь практически каждой историей профессионального пути человека, с которым начинаю знакомство и общение. Очень интересно прослеживать процесс становления эксперта в какой-то сфере. Порой диву даёшься от того, как они пришли к сегодняшнему состоянию профессии, какие крутые повороты были в жизни, какие решения были приняты, как раскрывался потенциал и способности и т.д.
@@ -187,5 +199,28 @@ episode: "Выпуск #20. Беседа с Константином Макуш�
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}

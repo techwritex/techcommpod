@@ -7,6 +7,18 @@ summary: В сегодняшнем выпуске затронуты вопро�
 categories: 
 comments: false
 episode: "Выпуск #22. Беседа с Владимиром Лагутинским"
+related_episode_1_link: "https://techcommpod.ru/vypusk-9-vizualizatciya-dannykh/"
+related_episode_1_number: "Выпуск #9"
+related_episode_1_title: "Визуализация данных" 
+related_episode_1_intro: "Технические коммуникаторы - это не только техписатели, как многие привыкли считать, это достаточно широкий диапазон профессий. Среди этих профессий присутствуют также специалисты по визуализации данных."
+related_episode_2_link: "https://techcommpod.ru/vypusk-19-delaj-prosche-dumaj-menshe/"
+related_episode_2_number: "Выпуск #19"
+related_episode_2_title: "Делай проще, думай меньше" 
+related_episode_2_intro: "Делай проще, чтобы поняли, да и сам думай меньше, задачу закрыть надо... Мысли о тенденции упрощения всего в нашей жизни и о том, какое участие принимают в этом процессе инженеры, техписатели многие другие."
+related_episode_3_link: "https://techcommpod.ru/vypusk-21-inzhenery-analitiki-i-dbt/"
+related_episode_3_number: "Выпуск #21"
+related_episode_3_title: "Инженеры-аналитики и dbt" 
+related_episode_3_intro: "Всё вокруг нас меняется с немыслимой скоростью, мир данных очень сильно изменился. Если раньше от специалиста требовалось наличие широкого спектра навыков, то сейчас в тренде узкая специализация. Это приводит к появлению новых профессий."
 ---
 
 В сегодняшнем выпуске затронуты вопросы, напрямую или косвенно связанные с замещением зарубежного ПО для создания BI-решений, в частности, линейки продуктов SAP для BI-решений. 
@@ -164,5 +176,28 @@ episode: "Выпуск #22. Беседа с Владимиром Лагутин�
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}

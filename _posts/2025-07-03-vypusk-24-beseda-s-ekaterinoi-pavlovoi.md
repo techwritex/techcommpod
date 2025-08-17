@@ -7,6 +7,18 @@ summary: Когда-то давным-давно меня пугали, что �
 categories: 
 comments: false
 episode: "Выпуск #24. Беседа с Екатериной Павловой"
+related_episode_1_link: "https://techcommpod.ru/vypusk-25-beseda-s-dmitriem-razvozzhaevym/"
+related_episode_1_number: "Выпуск #25"
+related_episode_1_title: "Беседа с Дмитрием Развозжаевым" 
+related_episode_1_intro: "Нас постоянно пугают восстанием машин в виде «искусственного интеллекта» (ИИ). Что такое ИИ - благо или зло? Как развитие ИИ сказывается на профессиональной сфере техписателей?"
+related_episode_2_link: "https://techcommpod.ru/vypusk-20-beseda-s-konstantinom-makushevym/"
+related_episode_2_number: "Выпуск #20"
+related_episode_2_title: "Беседа с Константином Макушевым" 
+related_episode_2_intro: "Удивительная история о профессиональной трансформации инженера из научной академической среды в успешного технического писателя, а также Diataxis и отказ от скриншотов."
+related_episode_3_link: "https://techcommpod.ru/vypusk-12-beseda-s-arinoj-ballerinoj/"
+related_episode_3_number: "Выпуск #12"
+related_episode_3_title: "Беседа с Ариной Балериной" 
+related_episode_3_intro: "Путь от инженера до одного из инфлюенсеров русскоязычного техписательского пространства. История технического коммуникатора с 20-летним опытом работы в IT."
 ---
 
 Когда-то давным-давно меня пугали, что если я буду делиться своими сокровенными знаниями, то стану ненужным и меня уволят. Какое-то время я так и делал. Со временем осознал, что делаю хуже только самому себе. Но до сих пор мне встречаются коллеги, которые продолжают многие годы жить в этой парадигме сокрытия знаний. 
@@ -238,5 +250,28 @@ episode: "Выпуск #24. Беседа с Екатериной Павлово�
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
