@@ -7,6 +7,18 @@ summary: В процессе выполнения одной из основны
 categories: 
 comments: false
 episode: "Выпуск #16. Понятная инструкция"
+related_episode_1_link: "https://techcommpod.ru/vypusk-10-obzor-diataxis/"
+related_episode_1_number: "Выпуск #10"
+related_episode_1_title: "Обзор Diataxis" 
+related_episode_1_intro: "Diátaxis - подход структурирования и организации технической документации, который значительно упрощает работу с документацией как её разработчикам, так и читателям. В выпуске представлен краткий обзор данного подхода."
+related_episode_2_link: "https://techcommpod.ru/vypusk-11-nuzhen-li-inzheneram-navyk-pisma/"
+related_episode_2_number: "Выпуск #11"
+related_episode_2_title: "Нужен ли инженерам навык письма?" 
+related_episode_2_intro: "Абсолютное большинство инженеров вообще не интересуются навыком письма. Обычный ответ в этом случае: «Я только код пишу, мне этого достаточно.» И это печально, если честно."
+related_episode_3_link: "https://techcommpod.ru/vypusk-17-usability-dokumentatcii/"
+related_episode_3_number: "Выпуск #17"
+related_episode_3_title: "Юзабилити документации" 
+related_episode_3_intro: "Жизненный цикл разработки любого продукта включает в себя этап тестирования. Тестировать нужно не только функциональность, но и удобство использования (юзабилити). Документация, как продукт, не является исключением."
 ---
 
 В процессе выполнения одной из основных задач на работе в прошлом году довелось изучить различное программное обеспечение по разработке хранилищ данных, а также документацию к нему. Так плохо написанной документации - в частности, инструкции для администраторов и пользователей - я ещё не встречал. Что больше всего меня опечалило, так это то, что практически всю эту документацию писали инженеры - разработчики продуктов.
@@ -453,5 +465,28 @@ SAP-консультант - это такой «и швец, и жнец, и н
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
