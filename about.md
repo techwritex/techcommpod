@@ -54,6 +54,12 @@ permalink: /about/
     </figure>
 </p>
 
+<p>
+    <figure>
+        <a target="_blank" href="https://www.litres.ru/podcast/vladimir-usupov-33515281/tehkompod-podkast-tehnicheskogo-kommunikatora-72347815/"><img src="{{site.url}}{{site.baseurl}}/assets/platforms/RU_Litres_Podcasts_techcommpod.svg" alt="Техкомпод на Литрес"></a>
+    </figure>
+</p>
+
 <br>
 
 {% include host.html %}
