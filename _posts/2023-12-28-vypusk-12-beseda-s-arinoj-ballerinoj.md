@@ -7,6 +7,18 @@ summary: Уже не раз говорил, что пытаюсь вести п�
 categories: 
 comments: false
 episode: "Выпуск #12. Беседа с Ариной Балериной"
+related_episode_1_link: "https://techcommpod.ru/vypusk-2-edinyj-istochnik-pravdy/"
+related_episode_1_number: "Выпуск #2"
+related_episode_1_title: "Единый источник правды" 
+related_episode_1_intro: "Размышления по поводу эволюции технической документации и таком понятии, как единый источник правды"
+related_episode_2_link: "https://techcommpod.ru/vypusk-20-beseda-s-konstantinom-makushevym/"
+related_episode_2_number: "Выпуск #20"
+related_episode_2_title: "Беседа с Константином Макушевым" 
+related_episode_2_intro: "Удивительная история о профессиональной трансформации инженера из научной академической среды в успешного технического писателя, а также Diataxis и отказ от скриншотов."
+related_episode_3_link: "https://techcommpod.ru/vypusk-5-dokumentatciya-kak-kod/"
+related_episode_3_number: "Выпуск #5"
+related_episode_3_title: "Документация как код" 
+related_episode_3_intro: "Переход на парадигму «документация как код» в части создания и сопровождения технической документации. Для чего нужны и как написать понятные сообщения для git-коммитов."
 ---
 
 Уже не раз говорил, что пытаюсь вести просветительскую деятельность по развитию культуры осознанной работы с написанием документации у инженеров. Не всегда мои слова звучат убедительно, так как я не являюсь экспертом в данном вопросе. 
@@ -691,5 +703,28 @@ SAP-консультант - это такой "и швец, и жнец, и н�
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
