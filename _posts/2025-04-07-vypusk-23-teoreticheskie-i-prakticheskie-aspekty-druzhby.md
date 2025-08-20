@@ -7,6 +7,18 @@ summary: Все ли друзья одинаковы? Сколько друзе�
 categories: 
 comments: false
 episode: "Выпуск #23. Теоретические и практические аспекты дружбы"
+related_episode_1_link: "https://techcommpod.ru/vypusk-13-pochemu-menya-ne-ponimayut/"
+related_episode_1_number: "Выпуск #13"
+related_episode_1_title: "Почему меня не понимают?" 
+related_episode_1_intro: "В жизни каждого из нас часто встречаются ситуации, когда собеседники не понимают нас. Но почему не понимают? Может проблема в объяснении? Как объяснять так, чтобы понимали?"
+related_episode_2_link: "https://techcommpod.ru/vypusk-19-delaj-prosche-dumaj-menshe/"
+related_episode_2_number: "Выпуск #19"
+related_episode_2_title: "Делай проще, думай меньше" 
+related_episode_2_intro: "Делай проще, чтобы поняли, да и сам думай меньше, задачу закрыть надо... Мысли о тенденции упрощения всего в нашей жизни и о том, какое участие принимают в этом процессе инженеры, техписатели многие другие."
+related_episode_3_link: "https://techcommpod.ru/vypusk-16-ponyatnaya-instruktsiya/"
+related_episode_3_number: "Выпуск #16"
+related_episode_3_title: "Понятная инструкция" 
+related_episode_3_intro: "Аудио-версия небольшой книги «Как написать понятную инструкцию. Опыт инженера», котороая родилась в результате выполнения задач в рамках импортозамещения."
 ---
 
 Все ли друзья одинаковы? Сколько друзей может быть? Сколько времени требуется, чтобы стать близким другом? В конце концов, кого можно назвать другом? 
@@ -227,5 +239,28 @@ episode: "Выпуск #23. Теоретические и практически
 <br>
 
 {% include podcast_share_buttons_bottom.html %}
+
+{% if page.related_episode_1_link and page.related_episode_1_number and page.related_episode_1_title and page.related_episode_1_intro and page.related_episode_2_link and page.related_episode_2_number and page.related_episode_2_title and page.related_episode_2_intro and page.related_episode_3_link and page.related_episode_3_number and page.related_episode_3_title and page.related_episode_3_intro %}
+
+{% include related_episodes.html 
+
+episode_1_link=page.related_episode_1_link 
+episode_1_number=page.related_episode_1_number 
+episode_1_title=page.related_episode_1_title 
+episode_1_intro=page.related_episode_1_intro 
+
+episode_2_link=page.related_episode_2_link 
+episode_2_number=page.related_episode_2_number 
+episode_2_title=page.related_episode_2_title 
+episode_2_intro=page.related_episode_2_intro 
+
+episode_3_link=page.related_episode_3_link 
+episode_3_number=page.related_episode_3_number 
+episode_3_title=page.related_episode_3_title 
+episode_3_intro=page.related_episode_3_intro 
+
+%}
+
+{% endif %}
 
 {% include podcast_subscribe_form_1.html %}
