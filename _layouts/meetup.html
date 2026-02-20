@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechComm Online Meetup | Registration</title>
+    <title>TechComm Online Meetup | DOC_v2.0</title>
     <!-- Подключение шрифта Cutive Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
     <!-- <link rel="stylesheet" href="style.css"> -->
      <style>
-        /* Базовые настройки */
         :root {
             --black: #000000;
             --white: #ffffff;
-            --gray: #f4f4f4;
-            --border-style: 1px solid var(--black);
+            --gray: #f5f5f5;
+            --border: 1px solid var(--black);
             --font-mono: 'Cutive Mono', monospace;
         }
 
@@ -26,8 +25,7 @@
             color: var(--black);
             font-family: var(--font-mono);
             margin: 0;
-            padding: 0;
-            line-height: 1.4;
+            line-height: 1.5;
         }
 
         .container {
@@ -39,157 +37,165 @@
         /* Header */
         .header {
             padding: 60px 0;
-            border-bottom: var(--border-style);
-            text-align: left;
+            border-bottom: 3px double var(--black);
+        }
+
+        .top-nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .badge {
-            border: var(--border-style);
+            border: var(--border);
             padding: 2px 8px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin: 20px 0 10px 0;
+            font-size: 2.8rem;
+            margin: 0;
             text-transform: uppercase;
+            letter-spacing: -1px;
         }
 
         .subtitle {
+            margin-top: 10px;
             font-size: 1.1rem;
-            margin: 0;
         }
 
-        /* Секции */
-        .section { margin-top: 60px; }
+        /* Sections */
+        .section { margin-top: 70px; }
 
         .section-title {
-            border-bottom: var(--border-style);
+            border-bottom: var(--border);
             padding-bottom: 5px;
             margin-bottom: 30px;
+            font-size: 1.4rem;
         }
 
-        /* Спикеры */
+        /* 00. Description Grid */
+        .description-grid {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            gap: 40px;
+        }
+
+        .meta-info {
+            border: var(--border);
+            padding: 20px;
+            background: var(--gray);
+        }
+
+        .meta-box {
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .meta-box:last-child { border: none; }
+
+        /* 01. Speakers */
         .speaker-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
         }
 
         .speaker-card {
-            border: var(--border-style);
-            padding: 20px;
+            border: var(--border);
+            padding: 25px;
         }
 
         .img-wrapper {
-            border: var(--border-style);
-            display: inline-block;
+            border: var(--border);
             padding: 5px;
+            display: inline-block;
             margin-bottom: 15px;
         }
 
         .speaker-img {
+            display: block;
             width: 100%;
             max-width: 150px;
-            display: block;
             filter: grayscale(1);
         }
 
-        .role {
-            font-weight: bold;
-            font-size: 0.9rem;
-            margin: 5px 0;
-        }
+        .role { font-weight: bold; font-size: 0.9rem; margin: 5px 0; }
+        .topic { font-style: italic; border-top: 1px dashed #000; padding-top: 10px; margin-top: 10px; }
 
-        .topic {
-            font-style: italic;
-            border-top: 1px dashed var(--black);
-            padding-top: 10px;
-            margin-top: 10px;
-        }
-
-        /* Программа */
+        /* 02. Timeline */
         .timeline {
             border-left: 2px solid var(--black);
-            padding-left: 20px;
+            padding-left: 25px;
         }
 
         .timeline-item {
             margin-bottom: 15px;
-            display: flex;
-            gap: 20px;
+            position: relative;
         }
 
-        .time { font-weight: bold; min-width: 60px; }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background: var(--white);
+            border: 2px solid var(--black);
+        }
 
-        /* Модератор */
+        .timeline-item.highlight::before { background: var(--black); }
+
+        .time { font-weight: bold; margin-right: 20px; }
+
+        /* Moderator Card */
         .moderator-card {
             display: flex;
-            border: 2px solid var(--black);
-            padding: 20px;
+            border: 3px solid var(--black);
+            padding: 30px;
+            gap: 30px;
             align-items: center;
-            gap: 20px;
         }
 
-        .label {
-            background: var(--black);
-            color: var(--white);
-            padding: 2px 10px;
-            font-size: 0.8rem;
-        }
-
-        .mod-img { border: var(--border-style); width: 100px; }
+        .label { background: var(--black); color: #fff; padding: 2px 10px; font-size: 0.8rem; }
+        .mod-img { border: var(--border); width: 120px; filter: grayscale(1); }
 
         /* FAQ */
-        .faq-item { border: var(--border-style); margin-bottom: -1px; }
-
+        .faq-item { border: var(--border); margin-bottom: -1px; }
         .faq-input { display: none; }
-
-        .faq-label {
-            display: block;
-            padding: 15px;
-            cursor: pointer;
-            background: var(--white);
-        }
-
-        .faq-label:hover { background: var(--gray); }
-
-        .faq-content {
-            display: none;
-            padding: 15px;
-            border-top: 1px dashed var(--black);
-            font-size: 0.9rem;
-        }
-
+        .faq-label { display: block; padding: 15px; cursor: pointer; font-weight: bold; }
+        .faq-content { display: none; padding: 15px; background: var(--gray); font-size: 0.9rem; }
         .faq-input:checked + .faq-label + .faq-content { display: block; }
 
-        /* Форма */
+        /* Form Box */
         .form-box {
-            margin-top: 80px;
-            border: 3px double var(--black);
-            padding: 40px;
+            margin: 80px auto 0;
             max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            border: 1px solid var(--black);
+            padding: 40px;
+            box-shadow: 10px 10px 0px var(--black);
         }
 
         input {
             width: 100%;
-            border: var(--border-style);
-            padding: 12px;
-            margin-bottom: 15px;
+            border: var(--border);
+            padding: 15px;
+            margin-bottom: 20px;
             font-family: var(--font-mono);
+            outline: none;
         }
 
         .btn-main {
             width: 100%;
             background: var(--black);
             color: var(--white);
-            border: var(--border-style);
+            border: 1px solid var(--black);
             padding: 15px;
             font-family: var(--font-mono);
-            cursor: pointer;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .btn-main:hover { background: var(--white); color: var(--black); }
@@ -199,26 +205,25 @@
             text-align: center;
             margin-top: 15px;
             color: var(--black);
-            font-size: 0.8rem;
             text-decoration: none;
+            font-size: 0.8rem;
         }
-
-        .btn-cal:hover { text-decoration: underline; }
 
         /* Footer */
         .footer {
             margin-top: 100px;
-            padding: 40px 0;
-            border-top: var(--border-style);
+            padding: 60px 0;
+            border-top: var(--border);
             text-align: center;
         }
 
-        .socials a { color: var(--black); text-decoration: none; font-weight: bold; }
+        .socials a { color: var(--black); text-decoration: none; font-weight: bold; padding: 0 10px; }
         .socials a:hover { text-decoration: underline; }
 
-        /* Адаптивность */
-        @media (max-width: 600px) {
-            .moderator-card { flex-direction: column; text-align: center; }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .description-grid { grid-template-columns: 1fr; }
+            .moderator-card { flex-direction: column-reverse; text-align: center; }
         }
      </style>
 </head>
@@ -226,20 +231,42 @@
 
     <header class="header">
         <div class="container">
-            <span class="badge">LIVE_STREAM_v1.0</span>
+            <div class="top-nav">
+                <span class="badge">STATUS: OPEN_REGISTRATION</span>
+                <span class="badge">REF: TC-2024-10-25</span>
+            </div>
             <h1>TechComm Online Meetup</h1>
-            <p class="subtitle">Конференция для техписателей и инженеров</p>
+            <p class="subtitle">Инженерный подход к документации и процессам</p>
         </div>
     </header>
 
     <main class="container">
-        <!-- Спикеры -->
+        
+        <!-- 00. Описание -->
+        <section class="section">
+            <h2 class="section-title">00. ОБЗОР_МЕРОПРИЯТИЯ</h2>
+            <div class="description-grid">
+                <div class="description-text">
+                    <p>> ИНИЦИАТИВА: TECHCOMM_PODCAST</p>
+                    <p>Этот митап создан для тех, кто строит мосты между сложным кодом и понятным текстом. Мы разберем, как инженерам и техписателям работать в едином цикле разработки, не теряя в качестве и скорости релизов.</p>
+                    <p>Вас ждут три прикладных кейса от лидеров индустрии, живое обсуждение процессов Docs-as-Code и сессия вопросов и ответов.</p>
+                </div>
+                <div class="meta-info">
+                    <div class="meta-box"><strong>ДАТА:</strong> 25_ОКТ_2024</div>
+                    <div class="meta-box"><strong>ВРЕМЯ:</strong> 18:00_MSK</div>
+                    <div class="meta-box"><strong>МЕСТО:</strong> ONLINE_ZOOM</div>
+                    <div class="meta-box"><strong>ЯЗЫК:</strong> RUSSIAN</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 01. Спикеры -->
         <section class="section">
             <h2 class="section-title">01. ЭКСПЕРТЫ</h2>
             <div class="speaker-grid">
                 <div class="speaker-card">
                     <div class="img-wrapper">
-                        <img src="https://via.placeholder.com" alt="Алексей Иванов" class="speaker-img">
+                        <img src="https://via.placeholder.com" alt="Алексей" class="speaker-img">
                     </div>
                     <h3>АЛЕКСЕЙ ИВАНОВ</h3>
                     <p class="role">Lead Tech Writer, Яндекс</p>
@@ -247,7 +274,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="img-wrapper">
-                        <img src="https://via.placeholder.com" alt="Мария Петрова" class="speaker-img">
+                        <img src="https://via.placeholder.com" alt="Мария" class="speaker-img">
                     </div>
                     <h3>МАРИЯ ПЕТРОВА</h3>
                     <p class="role">Senior DevRel, Avito</p>
@@ -255,7 +282,7 @@
                 </div>
                 <div class="speaker-card">
                     <div class="img-wrapper">
-                        <img src="https://via.placeholder.com" alt="Сергей Волков" class="speaker-img">
+                        <img src="https://via.placeholder.com" alt="Сергей" class="speaker-img">
                     </div>
                     <h3>СЕРГЕЙ ВОЛКОВ</h3>
                     <p class="role">Head of Docs, JetBrains</p>
@@ -264,25 +291,33 @@
             </div>
         </section>
 
-        <!-- Программа -->
+        <!-- 02. Программа -->
         <section class="section">
-            <h2 class="section-title">02. ПРОГРАММА</h2>
+            <h2 class="section-title">02. ПРОГРАММА_LOGS</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <span class="time">18:00</span>
-                    <span class="activity">Intro: Вступительное слово модератора</span>
+                    <span class="activity">INTRO: Вступительное слово модератора</span>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item highlight">
                     <span class="time">18:15</span>
-                    <span class="activity">Доклад #1 + Q&A сессия</span>
+                    <span class="activity">SESSION_1: Доклад Алексея Иванова + Q&A</span>
+                </div>
+                <div class="timeline-item highlight">
+                    <span class="time">18:45</span>
+                    <span class="activity">SESSION_2: Доклад Марии Петровой + Q&A</span>
                 </div>
                 <div class="timeline-item">
                     <span class="time">19:15</span>
-                    <span class="activity">BREAK: Кофе-брейк и чат</span>
+                    <span class="activity">INTERVAL: Перерыв и нетворкинг</span>
+                </div>
+                <div class="timeline-item highlight">
+                    <span class="time">19:30</span>
+                    <span class="activity">SESSION_3: Доклад Сергея Волкова + Q&A</span>
                 </div>
                 <div class="timeline-item">
-                    <span class="time">19:30</span>
-                    <span class="activity">Доклад #3 + Финальная дискуссия</span>
+                    <span class="time">20:00</span>
+                    <span class="activity">FINAL: Дискуссия и закрытие потока</span>
                 </div>
             </div>
         </section>
@@ -291,27 +326,28 @@
         <section class="section">
             <div class="moderator-card">
                 <div class="moderator-info">
-                    <span class="label">MODERATOR</span>
+                    <span class="label">HOST_SYSTEM</span>
                     <h3>АРТЕМ ГОРБУНОВ</h3>
-                    <p>Автор подкаста TechCommPod. Эксперт по управлению знаниями и контентом.</p>
+                    <p>Автор подкаста TechCommPod. Эксперт по управлению знаниями.</p>
+                    <p class="description">Поможет спикерам раскрыть темы, а зрителям — получить ответы на самые острые вопросы.</p>
                 </div>
-                <img src="https://via.placeholder.com" alt="Артем" class="mod-img">
+                <img src="https://via.placeholder.com" alt="Модератор" class="mod-img">
             </div>
         </section>
 
-        <!-- FAQ -->
+        <!-- 03. FAQ -->
         <section class="section">
-            <h2 class="section-title">03. FAQ</h2>
+            <h2 class="section-title">03. ЧАСТО_ЗАДАВАЕМЫЕ_ВОПРОСЫ</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <input type="checkbox" id="f1" class="faq-input">
                     <label for="f1" class="faq-label">БУДЕТ ЛИ ЗАПИСЬ?</label>
-                    <div class="faq-content">Да, ссылка придет на почту всем участникам.</div>
+                    <div class="faq-content">Да, мы вышлем ссылку на видео всем зарегистрированным участникам.</div>
                 </div>
                 <div class="faq-item">
                     <input type="checkbox" id="f2" class="faq-input">
-                    <label for="f2" class="faq-label">ГДЕ ССЫЛКА НА ZOOM?</label>
-                    <div class="faq-content">За час до начала в вашем почтовом ящике.</div>
+                    <label for="f2" class="faq-label">КАК ПОДКЛЮЧИТЬСЯ К ZOOM?</label>
+                    <div class="faq-content">Индивидуальная ссылка придет за 1 час до начала на ваш e-mail.</div>
                 </div>
             </div>
         </section>
@@ -319,12 +355,12 @@
         <!-- Регистрация -->
         <section class="registration">
             <div class="form-box">
-                <h2 style="text-align: center;">РЕГИСТРАЦИЯ_ФОРМА</h2>
+                <h2 style="text-align: center;">REGISTRATION_FORM</h2>
                 <form>
-                    <input type="text" placeholder="ИМЯ_ПОЛЬЗОВАТЕЛЯ" required>
-                    <input type="email" placeholder="EMAIL_АДРЕС" required>
-                    <button type="submit" class="btn-main">ОТПРАВИТЬ ЗАЯВКУ</button>
-                    <a href="#" class="btn-cal">++ ДОБАВИТЬ В КАЛЕНДАРЬ</a>
+                    <input type="text" placeholder="USER_NAME" required>
+                    <input type="email" placeholder="USER_EMAIL" required>
+                    <button type="submit" class="btn-main">ПОДТВЕРДИТЬ УЧАСТИЕ</button>
+                    <a href="#" class="btn-cal">++ ADD_TO_CALENDAR (.ics)</a>
                 </form>
             </div>
         </section>
@@ -335,7 +371,7 @@
             <div class="socials">
                 <a href="#">TELEGRAM</a> | <a href="#">YOUTUBE</a> | <a href="#">APPLE_PODS</a>
             </div>
-            <p style="margin-top: 20px;">[ END OF DOCUMENT ]</p>
+            <p style="margin-top: 25px; font-size: 0.8rem; color: #888;">[ SYSTEM_ID: TECHCOMM-998234 / END_OF_PAGE ]</p>
         </div>
     </footer>
 
