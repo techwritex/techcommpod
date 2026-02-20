@@ -15,6 +15,7 @@
             --white: #ffffff;
             --gray: #f5f5f5;
             --border: 1px solid var(--black);
+            --border-img: 1px solid var(--white);
             --font-mono: 'Cutive Mono', monospace;
         }
 
@@ -108,7 +109,8 @@
         }
 
         .img-wrapper {
-            border: var(--border);
+            /* border: var(--border); */
+            border: var(--border-img);
             padding: 5px;
             display: inline-block;
             margin-bottom: 15px;
@@ -160,7 +162,8 @@
         }
 
         .label { background: var(--black); color: #fff; padding: 2px 10px; font-size: 0.8rem; }
-        .mod-img { border: var(--border); width: 120px; filter: grayscale(1); }
+        /* .mod-img { border: var(--border); width: 120px; filter: grayscale(1); } */
+        .mod-img { border: var(--border-img); width: 120px; filter: grayscale(1); }
 
         /* FAQ */
         .faq-item { border: var(--border); margin-bottom: -1px; }
@@ -236,7 +239,7 @@
                 <span class="badge">REF: TC-2024-10-25</span>
             </div>
             <h1>TechCommPod Online Meetup</h1>
-            <p class="subtitle">Инженерный подход к документации и процессам</p>
+            <p class="subtitle">Инженерный подход к работе с документацией</p>
         </div>
     </header>
 
@@ -247,7 +250,7 @@
             <h2 class="section-title">ОБЗОР_МЕРОПРИЯТИЯ</h2>
             <div class="description-grid">
                 <div class="description-text">
-                    <p>> ИНИЦИАТИВА: TECHCOMM_PODCAST</p>
+                    <p>> ИНИЦИАТИВА: Подкаст techcommpod.ru</p>
                     <p>Этот митап создан для тех, кто строит мосты между сложным кодом и понятным текстом. Мы разберем, как инженерам и техписателям работать в едином цикле разработки, не теряя в качестве и скорости релизов.</p>
                     <p>Вас ждут три прикладных кейса от лидеров индустрии, живое обсуждение процессов Docs-as-Code и сессия вопросов и ответов.</p>
                 </div>
@@ -255,7 +258,7 @@
                     <div class="meta-box"><strong>ДАТА:</strong> 25 МАРТА 2026</div>
                     <div class="meta-box"><strong>ВРЕМЯ:</strong> 18:00 (MSK)</div>
                     <div class="meta-box"><strong>МЕСТО:</strong> ONLINE</div>
-                    <div class="meta-box"><strong>ЯЗЫК:</strong> RUSSIAN</div>
+                    <!-- <div class="meta-box"><strong>ЯЗЫК:</strong> Русский</div> -->
                 </div>
             </div>
         </section>
@@ -323,7 +326,7 @@
                     <span class="time">19:15</span>
                     <span class="activity">Перерыв</span>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item highlight">
                     <span class="time">19:20</span>
                     <span class="activity">Дискуссия и закрытие мероприятия</span>
                 </div>
@@ -336,8 +339,8 @@
                 <div class="moderator-info">
                     <span class="label">Ведущий/модератор</span>
                     <h3>ВЛАДИМИР ЮСУПОВ</h3>
-                    <p>Автор подкаста TechCommPod. Инженер неравнодушный к документации.</p>
-                    <p class="description">Поможет спикерам раскрыть темы, а зрителям — получить ответы на интересующие вопросы.</p>
+                    <p>Автор подкаста techcommpod.ru. Инженер неравнодушный к документации.</p>
+                    <p class="description">Поможет спикерам раскрыть темы, а слушателям и зрителям — получить ответы на интересующие вопросы.</p>
                 </div>
                 <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Модератор" class="mod-img">
             </div>
@@ -350,12 +353,12 @@
                 <div class="faq-item">
                     <input type="checkbox" id="f1" class="faq-input">
                     <label for="f1" class="faq-label">БУДЕТ ЛИ ЗАПИСЬ?</label>
-                    <div class="faq-content">Да, мы вышлем ссылку на видео всем зарегистрированным участникам.</div>
+                    <div class="faq-content">Да, запись будет в аудио-формате в виде выпуска подкаста. Но только в прямом эфире будет возможность задать вопрос экспертам.</div>
                 </div>
                 <div class="faq-item">
                     <input type="checkbox" id="f2" class="faq-input">
-                    <label for="f2" class="faq-label">КАК ПОДКЛЮЧИТЬСЯ К ZOOM?</label>
-                    <div class="faq-content">Индивидуальная ссылка придет за 1 час до начала на ваш e-mail.</div>
+                    <label for="f2" class="faq-label">КАК ПОДКЛЮЧИТЬСЯ К МИТАПУ?</label>
+                    <div class="faq-content">Индивидуальная ссылка придет за 1 час до начала на указанный при регистрации e-mail.</div>
                 </div>
             </div>
         </section>
