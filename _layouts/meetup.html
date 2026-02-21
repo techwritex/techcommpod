@@ -399,53 +399,90 @@
     <footer class="footer">
         <div class="container">
             <div class="socials">
-                <a href="https://music.yandex.ru/album/29225495">Яндекс Музыка</a> | <a href="https://www.litres.ru/podcast/vladimir-usupov-33515281/tehkompod-podkast-tehnicheskogo-kommunikatora-72347815/">Apple Podcasts</a> | <a href="https://apple.co/3SbtZXI">Литрес Подкасты</a>
+                <a href="https://music.yandex.ru/album/29225495">Яндекс Музыка</a> | <a href="https://apple.co/3SbtZXI">Apple Podcasts</a> | <a href="https://www.litres.ru/podcast/vladimir-usupov-33515281/tehkompod-podkast-tehnicheskogo-kommunikatora-72347815/">Литрес Подкасты</a>
             </div>
             <p style="margin-top: 25px; font-size: 0.8rem; color: #888;">© 2023 - {{ site.time | date: "%Y" }} <a href="https://techcommpod.ru/">{{site.owner}}</a></p>
         </div>
     </footer>
 
     <script>
+        // const form = document.getElementById('reg-form');
+        // const status = document.getElementById('form-status');
+    
+        // form.addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     const formData = new FormData(form);
+        //     const object = Object.fromEntries(formData);
+        //     const json = JSON.stringify(object);
+    
+        //     status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
+        //     status.style.color = "black";
+    
+        //     fetch('https://api.web3forms.com', {
+        //         method: 'POST',
+        //         headers: {
+        //             'Content-Type': 'application/json',
+        //             'Accept': 'application/json'
+        //         },
+        //         body: json
+        //     })
+        //     .then(async (response) => {
+        //         let json = await response.json();
+        //         if (response.status == 200) {
+        //             status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
+        //             status.style.color = "#0070f3"; // Синий акцент для успеха
+        //             form.reset();
+        //         } else {
+        //             console.log(response);
+        //             status.innerHTML = "> ERROR: " + json.message;
+        //         }
+        //     })
+        //     .catch(error => {
+        //         console.log(error);
+        //         status.innerHTML = "> SYSTEM_FAILURE: СБОЙ СЕТИ";
+        //     })
+        //     .then(function() {
+        //         setTimeout(() => {
+        //             // Очистка статуса через 5 секунд (опционально)
+        //             // status.innerHTML = "";
+        //         }, 5000);
+        //     });
+        // });
+
         const form = document.getElementById('reg-form');
         const status = document.getElementById('form-status');
-    
+
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            const formData = new FormData(form);
-            const object = Object.fromEntries(formData);
-            const json = JSON.stringify(object);
-    
+            
+            // Show loading state
             status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
             status.style.color = "black";
-    
+
+            // Use FormData directly - this is the "Secret Sauce" for CORS
+            const formData = new FormData(form);
+
             fetch('https://api.web3forms.com', {
                 method: 'POST',
+                body: formData, // Send as FormData, NOT JSON string
                 headers: {
-                    'Content-Type': 'application/json',
                     'Accept': 'application/json'
-                },
-                body: json
+                    // REMOVE 'Content-Type': 'application/json'
+                }
             })
             .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
+                const result = await response.json();
+                if (response.status === 200) {
                     status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
-                    status.style.color = "#0070f3"; // Синий акцент для успеха
+                    status.style.color = "#0070f3"; 
                     form.reset();
                 } else {
-                    console.log(response);
-                    status.innerHTML = "> ERROR: " + json.message;
+                    status.innerHTML = "> ERROR: " + (result.message || "ОТКАЗ_СЕРВЕРА");
                 }
             })
             .catch(error => {
-                console.log(error);
-                status.innerHTML = "> SYSTEM_FAILURE: СБОЙ СЕТИ";
-            })
-            .then(function() {
-                setTimeout(() => {
-                    // Очистка статуса через 5 секунд (опционально)
-                    // status.innerHTML = "";
-                }, 5000);
+                console.error('Fetch Error:', error);
+                status.innerHTML = "> SYSTEM_FAILURE: ПРОВЕРЬТЕ CORS/NETWORK";
             });
         });
         
