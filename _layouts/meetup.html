@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechComm Online Meetup | DOC_v2.0</title>
+    <title>TechComm Online Meetup</title>
     <!-- Подключение шрифта Cutive Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,8 @@
 
         /* Header */
         .header {
-            padding: 60px 0;
+            /* padding: 60px 0; */
+            padding: 40px 0;
             border-bottom: 3px double var(--black);
         }
 
@@ -104,7 +105,8 @@
         }
 
         .speaker-card {
-            border: var(--border);
+            /* border: var(--border); */
+            border: var(--border-img);
             padding: 25px;
         }
 
@@ -155,7 +157,8 @@
         /* Moderator Card */
         .moderator-card {
             display: flex;
-            border: 3px solid var(--black);
+            /* border: 3px solid var(--black); */
+            border: 3px solid var(--white);
             padding: 30px;
             gap: 30px;
             align-items: center;
@@ -178,7 +181,7 @@
             max-width: 500px;
             border: 1px solid var(--black);
             padding: 40px;
-            box-shadow: 10px 10px 0px var(--black);
+            /* box-shadow: 10px 10px 0px var(--black); */
         }
 
         input {
@@ -250,7 +253,7 @@
             <h2 class="section-title">ОБЗОР МЕРОПРИЯТИЯ</h2>
             <div class="description-grid">
                 <div class="description-text">
-                    <p>> ИНИЦИАТИВА: Подкаст techcommpod.ru</p>
+                    <p>> ОРГАНИЗАТОР: Подкаст techcommpod.ru</p>
                     <p>Этот митап создан для слушателей подкаста techcommpod.ru и всех тех, кто выстраивает коммуникации между сложными технологиями и пользователями. Мы разберем, как инженерам и техписателям работать в едином цикле разработки, не теряя в качестве и скорости релизов.</p>
                     <p>Вас ждут три прикладных кейса от экспертов индустрии, а также сессия вопросов и ответов.</p>
                 </div>
@@ -366,12 +369,28 @@
         <!-- Регистрация -->
         <section class="registration">
             <div class="form-box">
-                <h2 style="text-align: center;">Регистрация на митап</h2>
-                <form>
+                <h2 style="text-align: center;">Регистрация</h2>
+                <!-- <form>
                     <input type="text" placeholder="Имя" required>
                     <input type="email" placeholder="Email" required>
                     <button type="submit" class="btn-main">Участвовать</button>
-                </form>
+                </form> -->
+                <form action="https://api.web3forms.com" method="POST" id="reg-form">
+                    <input type="hidden" name="access_key" value="e09a335b-70e6-4b00-af48-96842dbd6923">
+                    
+                    <!-- Настройка темы письма и уведомлений -->
+                    <input type="hidden" name="subject" value="Новая регистрация: TechComm Meetup">
+                    <input type="hidden" name="from_name" value="TechComm Meetup Bot">
+                    
+                    <!-- Опционально: отключаем стандартную страницу успеха Web3Forms, 
+                         так как мы обрабатываем всё через JS -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit" class="btn-main">Участвовать</button>
+                    <div id="form-status" style="margin-top: 15px; font-size: 0.8rem; text-align: center; min-height: 1.2em;"></div>
+                    <a href="#" class="btn-cal">++ ADD_TO_CALENDAR (.ics)</a>
+                </form>                
             </div>
         </section>
     </main>
@@ -384,6 +403,79 @@
             <p style="margin-top: 25px; font-size: 0.8rem; color: #888;">[ SYSTEM_ID: TECHCOMM-998234 / END_OF_PAGE ]</p>
         </div>
     </footer>
+
+    <script>
+        const form = document.getElementById('reg-form');
+        const status = document.getElementById('form-status');
+    
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+    
+            status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
+            status.style.color = "black";
+    
+            fetch('https://api.web3forms.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
+                    status.style.color = "#0070f3"; // Синий акцент для успеха
+                    form.reset();
+                } else {
+                    console.log(response);
+                    status.innerHTML = "> ERROR: " + json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                status.innerHTML = "> SYSTEM_FAILURE: СБОЙ СЕТИ";
+            })
+            .then(function() {
+                setTimeout(() => {
+                    // Очистка статуса через 5 секунд (опционально)
+                    // status.innerHTML = "";
+                }, 5000);
+            });
+        });
+        
+        // Код для календаря
+        document.querySelector('.btn-cal').addEventListener('click', function(e) {
+            e.preventDefault();
+            const event = {
+                title: 'TechCommPod Online Meetup',
+                start: '20260325T180000',
+                end: '20260325T200000',
+                description: 'Ссылка на трансляцию придет на почту.'
+            };
+            
+            const icsContent = `BEGIN:VCALENDAR
+            VERSION:2.0
+            BEGIN:VEVENT
+            SUMMARY:${event.title}
+            DTSTART:${event.start}
+            DTEND:${event.end}
+            DESCRIPTION:${event.description}
+            END:VEVENT
+            END:VCALENDAR`;
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.setAttribute('download', 'meetup-techcommpod.ics');
+            link.click();
+        });
+    </script>
+    
 
 </body>
 </html>
