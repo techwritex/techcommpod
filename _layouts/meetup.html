@@ -426,8 +426,8 @@
                 <div class="moderator-info">
                     <span class="label">Ведущий/модератор</span>
                     <h3>ВЛАДИМИР ЮСУПОВ</h3>
-                    <p>Автор подкаста techcommpod.ru. Инженер неравнодушный к документации.</p>
-                    <p class="description">Поможет спикерам раскрыть темы, а слушателям и зрителям — получить ответы на интересующие вопросы.</p>
+                    <p>Автор подкаста techcommpod.ru, неравнодушный к документации инженер.</p>
+                    <p class="description">Поможет спикерам раскрыть темы, а слушателям и зрителям - получить ответы на интересующие вопросы.</p>
                 </div>
                 <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Модератор" class="mod-img">
             </div>
@@ -487,11 +487,6 @@
         <section class="registration">
             <div class="form-box">
                 <h2 style="text-align: center;">Регистрация</h2>
-                <!-- <form>
-                    <input type="text" placeholder="Имя" required>
-                    <input type="email" placeholder="Email" required>
-                    <button type="submit" class="btn-main">Участвовать</button>
-                </form> -->
                 <form action="https://api.web3forms.com" method="POST" id="reg-form">
                     <input type="hidden" name="access_key" value="37baaa03-e473-4040-b321-6f2d098dbb9f">
                     
@@ -522,48 +517,6 @@
     </footer>
 
     <script>
-        // const form = document.getElementById('reg-form');
-        // const status = document.getElementById('form-status');
-    
-        // form.addEventListener('submit', function(e) {
-        //     e.preventDefault();
-        //     const formData = new FormData(form);
-        //     const object = Object.fromEntries(formData);
-        //     const json = JSON.stringify(object);
-    
-        //     status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
-        //     status.style.color = "black";
-    
-        //     fetch('https://api.web3forms.com', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //             'Accept': 'application/json'
-        //         },
-        //         body: json
-        //     })
-        //     .then(async (response) => {
-        //         let json = await response.json();
-        //         if (response.status == 200) {
-        //             status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
-        //             status.style.color = "#0070f3"; // Синий акцент для успеха
-        //             form.reset();
-        //         } else {
-        //             console.log(response);
-        //             status.innerHTML = "> ERROR: " + json.message;
-        //         }
-        //     })
-        //     .catch(error => {
-        //         console.log(error);
-        //         status.innerHTML = "> SYSTEM_FAILURE: СБОЙ СЕТИ";
-        //     })
-        //     .then(function() {
-        //         setTimeout(() => {
-        //             // Очистка статуса через 5 секунд (опционально)
-        //             // status.innerHTML = "";
-        //         }, 5000);
-        //     });
-        // });
 
         const form = document.getElementById('reg-form');
         const status = document.getElementById('form-status');
@@ -630,6 +583,5 @@
         });
     </script>
     
-
 </body>
 </html>
