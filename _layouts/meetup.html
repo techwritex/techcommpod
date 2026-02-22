@@ -39,7 +39,7 @@
         /* Header */
         .header {
             /* padding: 60px 0; */
-            padding: 40px 0;
+            padding: 30px 0;
             border-bottom: 3px double var(--black);
         }
 
@@ -176,6 +176,77 @@
         .faq-content { display: none; padding: 15px; background: var(--gray); font-size: 0.9rem; }
         .faq-input:checked + .faq-label + .faq-content { display: block; }
 
+        /* Сетка партнеров с логотипами */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .partner-item {
+            border: 1px solid var(--black);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .partner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .partner-logo-box {
+            width: 80px;
+            height: 80px;
+            border: 1px solid var(--black);
+            padding: 5px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .partner-logo {
+            max-width: 100%;
+            max-height: 100%;
+            /* Эффект ч/б для любых загруженных картинок */
+            filter: grayscale(100%) contrast(150%);
+            transition: filter 0.3s ease;
+        }
+
+        .partner-item:hover .partner-logo {
+            filter: grayscale(0%) contrast(100%); /* Цвет возвращается при наведении */
+        }
+
+        .partner-meta {
+            font-size: 0.7rem;
+            color: #666;
+            text-align: right;
+        }
+
+        .partner-item h3 {
+            margin: 15px 0 10px 0;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .partner-link {
+            margin-top: auto; /* Прижимает ссылку к низу карточки */
+            display: inline-block;
+            color: var(--black);
+            text-decoration: none;
+            font-size: 0.8rem;
+            padding: 5px 0;
+        }
+
+        .partner-link:hover {
+            text-decoration: underline;
+            background: var(--black);
+            color: var(--white);
+        }
+
         /* Form Box */
         .form-box {
             margin: 80px auto 0;
@@ -231,6 +302,16 @@
         @media (max-width: 768px) {
             .description-grid { grid-template-columns: 1fr; }
             .moderator-card { flex-direction: column-reverse; text-align: center; }
+        }
+
+        /* Адаптив для мобильных устройств */
+        @media (max-width: 600px) {
+            .partners-grid {
+                grid-template-columns: 1fr;
+            }
+            .partner-header {
+                flex-direction: row-reverse;
+            }
         }
      </style>
 </head>
@@ -363,6 +444,39 @@
                     <input type="checkbox" id="f2" class="faq-input">
                     <label for="f2" class="faq-label">КАК ПОДКЛЮЧИТЬСЯ К МИТАПУ?</label>
                     <div class="faq-content">Индивидуальная ссылка придет за 1 час до начала на указанный при регистрации e-mail.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04. Партнеры -->
+        <section class="section">
+            <h2 class="section-title">ИНФОРМАЦИОННЫЕ ПАРТНЕРЫ</h2>
+            <div class="partners-grid">
+                <!-- Партнер 1 -->
+                <div class="partner-item">
+                    <div class="partner-header">
+                        <div class="partner-logo-box">
+                            <!-- Замените URL на реальный логотип в формате SVG или PNG -->
+                            <img src="https://via.placeholder.com" alt="Logo 001" class="partner-logo">
+                        </div>
+                        <div class="partner-meta">ID_REF: 001_COMMUNITY</div>
+                    </div>
+                    <h3>ТЕХПИСАТЕЛИ_РФ</h3>
+                    <p>Крупнейшее сообщество технических писателей в СНГ. Обмен опытом и база знаний.</p>
+                    <a href="#" class="partner-link">[ ПОСЕТИТЬ_РЕСУРС ]</a>
+                </div>
+                
+                <!-- Партнер 2 -->
+                <div class="partner-item">
+                    <div class="partner-header">
+                        <div class="partner-logo-box">
+                            <img src="https://via.placeholder.com" alt="Logo 002" class="partner-logo">
+                        </div>
+                        <div class="partner-meta">ID_REF: 002_MEDIA</div>
+                    </div>
+                    <h3>DEV_REL_WEEKLY</h3>
+                    <p>Еженедельный дайджест об инженерной культуре и работе с техническим контентом.</p>
+                    <a href="#" class="partner-link">[ ПОДПИСАТЬСЯ ]</a>
                 </div>
             </div>
         </section>
