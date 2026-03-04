@@ -55,6 +55,32 @@
             font-size: 0.75rem;
         }
 
+        /* Стиль для индикатора заполненности */
+        .status-badge {
+            border-color: #d00;
+            color: #d00;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #d00;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse-animation 1.5s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(0.9); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.5; }
+            100% { transform: scale(0.9); opacity: 1; }
+        }
+
+
         h1 {
             font-size: 2.8rem;
             margin: 0;
@@ -324,6 +350,10 @@
             <div class="top-nav">
                 <span class="badge">Статус: Регистрация открыта</span>
                 <!-- <span class="badge">REF: TC-2024-10-25</span> -->
+                <!-- Новый статус-индикатор -->
+                <span class="badge status-badge">
+                    <span class="pulse-dot"></span> STATUS: ALMOST FULL (24/30)
+                </span>
             </div>
             <h1>TechCommPod Online Meetup</h1>
             <p class="subtitle">Инженерный подход к работе с документацией</p>
@@ -338,13 +368,23 @@
             <div class="description-grid">
                 <div class="description-text">
                     <p>> ОРГАНИЗАТОР: Подкаст techcommpod.ru</p>
-                    <p>Данный митап создан для слушателей подкаста techcommpod.ru и всех тех, кто выстраивает коммуникации между сложными технологическими решениями и их пользователями.</p>
-                    <p>Вас ждут три прикладных кейса от экспертов индустрии, а также сессия вопросов и ответов.</p>
+                    <p><strong>Митап для тех, кто находится в начале пути выстраивания коммуникаций между сложными технологическими решениями и их пользователями.</p>
+                    <p>Мы подготовили прикладную программу для начинающих специалистов, которым важна:</p>
+                    <ul>
+                        <li><strong>Четкая картина:</strong> Обзор векторов профессионального развития в индустрии.</li>
+                        <li><strong>Карьерный трек:</strong> Перечень конкретных шагов для перехода на новый уровень.</li>
+                        <li><strong>Практика:</strong> Прикладные знания по решению типовых задач.</li>
+                    </ul>
+                    <!-- <p>Данный митап создан для начинающих специалистов, которые выстраивает коммуникации между сложными технологическими решениями и их пользователями.</p>
+                    <p>Вас ждут три прикладных кейса от экспертов индустрии, а также сессия вопросов и ответов.</p> -->
                 </div>
                 <div class="meta-info">
                     <div class="meta-box"><strong>ДАТА:</strong> 25 МАРТА 2026</div>
                     <div class="meta-box"><strong>ВРЕМЯ:</strong> 18:00 (МСК)</div>
                     <div class="meta-box"><strong>МЕСТО:</strong> ONLINE</div>
+                    <div class="meta-box" style="color: #d00; border-bottom: 1px dashed #d00;">
+                        <strong>КОЛ-ВО УЧАСТНИКОВ:</strong> ДО 30 ЧЕЛОВЕК
+                    </div>
                     <!-- <div class="meta-box"><strong>ЯЗЫК:</strong> Русский</div> -->
                 </div>
             </div>
@@ -487,22 +527,26 @@
         <section class="registration">
             <div class="form-box">
                 <h2 style="text-align: center;">Регистрация</h2>
-                <form action="https://api.web3forms.com" method="POST" id="reg-form">
-                    <input type="hidden" name="access_key" value="37baaa03-e473-4040-b321-6f2d098dbb9f">
+                <!-- <form action="https://api.web3forms.com" method="POST" id="reg-form"> -->
+                    <!-- <input type="hidden" name="access_key" value="37baaa03-e473-4040-b321-6f2d098dbb9f"> -->
                     
                     <!-- Настройка темы письма и уведомлений -->
-                    <input type="hidden" name="subject" value="Новая регистрация: TechCommPod Meetup">
-                    <input type="hidden" name="from_name" value="TechComm Meetup Page">
+                    <!-- <input type="hidden" name="subject" value="Новая регистрация: TechCommPod Meetup"> -->
+                    <!-- <input type="hidden" name="from_name" value="TechComm Meetup Page"> -->
                     
                     <!-- Опционально: отключаем стандартную страницу успеха Web3Forms, 
                          так как мы обрабатываем всё через JS -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    <input type="text" name="name" placeholder="Имя" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <button type="submit" class="btn-main">Участвовать</button>
-                    <div id="form-status" style="margin-top: 15px; font-size: 0.8rem; text-align: center; min-height: 1.2em;"></div>
-                    <a href="#" class="btn-cal">Добавить напоминание в календарь (.ics)</a>
-                </form>                
+                    <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
+                    <!-- <input type="text" name="name" placeholder="Имя" required> -->
+                    <!-- <input type="email" name="email" placeholder="Email" required> -->
+                    <!-- <button type="submit" class="btn-main">Участвовать</button> -->
+                    <!-- <div id="form-status" style="margin-top: 15px; font-size: 0.8rem; text-align: center; min-height: 1.2em;"></div> -->
+                    <!-- <a href="#" class="btn-cal">Добавить напоминание в календарь (.ics)</a> -->
+                <!-- </form>        -->
+                <p style="font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; text-align: center;">
+                    Места ограничены. Осталось мало слотов.
+                </p>
+                <button class="btn-main">ЗАБРОНИРОВАТЬ МЕСТО (1/30)</button>         
             </div>
         </section>
     </main>
