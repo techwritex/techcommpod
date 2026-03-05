@@ -315,6 +315,46 @@
             font-size: 0.8rem;
         }
 
+        .counter-container {
+            margin-bottom: 25px;
+            border: 1px dashed var(--black);
+            padding: 15px;
+            background: var(--white);
+        }
+
+        .counter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .counter-bar {
+            width: 100%;
+            height: 12px;
+            border: 1px solid var(--black);
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .counter-progress {
+            height: 100%;
+            background: var(--black);
+            transition: width 1s ease-in-out;
+        }
+
+        /* Состояние, когда места закончились */
+        .sold-out {
+            background: #d00 !important;
+            color: #fff !important;
+            border-color: #d00 !important;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
         /* Footer */
         .footer {
             margin-top: 100px;
@@ -521,8 +561,35 @@
 
         <!-- Регистрация -->
         <section class="registration">
+            <div class="counter-container">
+                <div class="counter-label">ЗАРЕГИСТРИРОВАНО:</div>
+                <div class="counter-bar">
+                    <div class="counter-progress" style="width: 70%;"></div> <!-- 21 из 30 это 70% -->
+                </div>
+                <div class="counter-value"><span id="current-reg">21</span> / 30</div>
+            </div>
+            
             <div class="form-box">
-                <h2 style="text-align: center;">Регистрация</h2>
+                <!-- Счетчик участников -->
+                <div class="counter-container">
+                    <div class="counter-header">
+                        <span class="label">LIVE FEED</span>
+                        <span class="counter-text">РЕГИСТРАЦИЯ: <span id="current-reg">...</span> / 30</span>
+                    </div>
+                    <div class="counter-bar">
+                        <div id="progress-line" class="counter-progress" style="width: 0%;"></div>
+                    </div>
+                    <p id="vacancy-status" style="font-size: 0.7rem; margin-top: 5px; text-align: center; text-transform: uppercase;">
+                        Загрузка данных...
+                    </p>
+                </div>
+
+                <a href="ВАША_ССЫЛКА_НА_GOOGLE_FORM" class="btn-main" id="reg-button" style="text-decoration: none; display: block; text-align: center;">
+                    ЗАБРОНИРОВАТЬ МЕСТО
+                </a>
+                
+                <a href="#" class="btn-cal">Добавить в календарь (.ics)</a>
+                <!-- <h2 style="text-align: center;">Регистрация</h2> -->
                 <!-- <form action="https://api.web3forms.com" method="POST" id="reg-form"> -->
                     <!-- <input type="hidden" name="access_key" value="37baaa03-e473-4040-b321-6f2d098dbb9f"> -->
                     
@@ -539,11 +606,11 @@
                     <!-- <div id="form-status" style="margin-top: 15px; font-size: 0.8rem; text-align: center; min-height: 1.2em;"></div> -->
                     <!-- <a href="#" class="btn-cal">Добавить напоминание в календарь (.ics)</a> -->
                 <!-- </form>        -->
-                <p style="font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; text-align: center;">
+                <!-- <p style="font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; text-align: center;">
                     Места ограничены. Осталось мало слотов.
-                </p>
+                </p> -->
                 <!-- <button class="btn-main">ЗАБРОНИРОВАТЬ МЕСТО (1/30)</button>        -->
-                <button class="btn-main" onclick="window.location.href='https://techcommpod.ru';">ЗАБРОНИРОВАТЬ МЕСТО</button>      
+                <!-- <button class="btn-main" onclick="window.location.href='https://techcommpod.ru';">ЗАБРОНИРОВАТЬ МЕСТО</button>       -->
             </div>
         </section>
     </main>
@@ -559,42 +626,92 @@
 
     <script>
 
-        const form = document.getElementById('reg-form');
-        const status = document.getElementById('form-status');
+        // const form = document.getElementById('reg-form');
+        // const status = document.getElementById('form-status');
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+        // form.addEventListener('submit', function(e) {
+        //     e.preventDefault();
             
-            // Show loading state
-            status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
-            status.style.color = "black";
+        //     // Show loading state
+        //     status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
+        //     status.style.color = "black";
 
-            // Use FormData directly - this is the "Secret Sauce" for CORS
-            const formData = new FormData(form);
+        //     // Use FormData directly - this is the "Secret Sauce" for CORS
+        //     const formData = new FormData(form);
 
-            fetch('https://api.web3forms.com', {
-                method: 'POST',
-                body: formData, // Send as FormData, NOT JSON string
-                headers: {
-                    'Accept': 'application/json'
-                    // REMOVE 'Content-Type': 'application/json'
-                }
-            })
-            .then(async (response) => {
-                const result = await response.json();
-                if (response.status === 200) {
-                    status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
-                    status.style.color = "#0070f3"; 
-                    form.reset();
+        //     fetch('https://api.web3forms.com', {
+        //         method: 'POST',
+        //         body: formData, // Send as FormData, NOT JSON string
+        //         headers: {
+        //             'Accept': 'application/json'
+        //             // REMOVE 'Content-Type': 'application/json'
+        //         }
+        //     })
+        //     .then(async (response) => {
+        //         const result = await response.json();
+        //         if (response.status === 200) {
+        //             status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
+        //             status.style.color = "#0070f3"; 
+        //             form.reset();
+        //         } else {
+        //             status.innerHTML = "> ERROR: " + (result.message || "ОТКАЗ_СЕРВЕРА");
+        //         }
+        //     })
+        //     .catch(error => {
+        //         console.error('Fetch Error:', error);
+        //         status.innerHTML = "> SYSTEM_FAILURE: ПРОВЕРЬТЕ CORS/NETWORK";
+        //     });
+        // });
+
+        async function syncParticipants() {
+            // 1. В Google Таблице: Файл -> Поделиться -> Опубликовать в интернете
+            // 2. Выберите "Весь документ" и формат "CSV"
+            // 3. Вставьте полученную ссылку ниже:
+            const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNke_kPosxmk-aDvjmk_qEFcuQwd8BMdE9lkvhlNNp7qNF804pGpkz2xxKY_23kZIobbSAKzehOsA/pub?output=csv';
+            const MAX_SEATS = 30;
+
+            try {
+                const response = await fetch(CSV_URL);
+                const data = await response.text();
+                
+                // Считаем строки (вычитаем 1, если есть заголовок)
+                const rows = data.trim().split('\n');
+                const count = rows.length > 1 ? rows.length - 1 : 0;
+                
+                const percent = Math.min((count / MAX_SEATS) * 100, 100);
+                const remaining = MAX_SEATS - count;
+
+                // Обновляем UI
+                document.getElementById('current-reg').innerText = count;
+                document.getElementById('progress-line').style.width = percent + '%';
+                
+                const statusEl = document.getElementById('vacancy-status');
+                const btn = document.getElementById('reg-button');
+
+                if (remaining <= 0) {
+                    statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
+                    btn.innerText = "SOLD OUT";
+                    btn.classList.add('sold-out');
+                } else if (remaining <= 5) {
+                    statusEl.innerText = `СРОЧНО: ОСТАЛОСЬ ВСЕГО ${remaining} МЕСТ`;
                 } else {
-                    status.innerHTML = "> ERROR: " + (result.message || "ОТКАЗ_СЕРВЕРА");
+                    statusEl.innerText = `СВОБОДНО МЕСТ: ${remaining}`;
                 }
-            })
-            .catch(error => {
-                console.error('Fetch Error:', error);
-                status.innerHTML = "> SYSTEM_FAILURE: ПРОВЕРЬТЕ CORS/NETWORK";
-            });
-        });
+                
+                // Обновляем также статус в шапке, если он там есть
+                const headerStatus = document.querySelector('.status-badge');
+                if (headerStatus) {
+                    headerStatus.innerHTML = `<span class="pulse-dot"></span> STATUS: ${count}/${MAX_SEATS} REGISTERED`;
+                }
+
+            } catch (error) {
+                console.error('Ошибка синхронизации:', error);
+                document.getElementById('vacancy-status').innerText = "ОШИБКА ОБНОВЛЕНИЯ ДАННЫХ";
+            }
+        }
+
+        // Запуск при загрузке
+        syncParticipants();
         
         // Код для календаря
         document.querySelector('.btn-cal').addEventListener('click', function(e) {
