@@ -622,6 +622,10 @@
                     </p>
                 </div>
 
+                <div id="waitlist-note" style="display: none; font-size: 0.75rem; background: #eee; padding: 10px; margin-bottom: 15px; border: 1px dashed var(--black);">
+                    Все места забронированы. Запишитесь в лист ожидания, и мы свяжемся с вами, если место освободится.
+                </div>
+
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd466GK9QJ_rb4tx4g3simLJd4CCuFHbEmBS4hm0ccSBD_lMw/viewform?usp=publish-editor" target="_blank" class="btn-main" id="reg-button" style="text-decoration: none; display: block; text-align: center;">
                     ЗАБРОНИРОВАТЬ МЕСТО
                 </a>
@@ -702,10 +706,23 @@
                 const btn = document.getElementById('reg-button');
 
                 if (remaining <= 0) {
-                    statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
-                    btn.innerText = "РЕГИСТРАЦИЯ ЗАКРЫТА";
+                    // statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
+                    // btn.innerText = "РЕГИСТРАЦИЯ ЗАКРЫТА";
                     btn.classList.add('sold-out'); 
                     document.getElementById('reg-status').innerText = "Статус: Регистрация закрыта.";
+
+                    // 1. Показываем заметку про лист ожидания
+                    document.getElementById('waitlist-note').style.display = 'block';
+                    
+                    // 2. Меняем статус на "Мест нет"
+                    statusEl.innerText = "ОСНОВНОЙ СПИСОК ЗАПОЛНЕН";
+                    statusEl.style.color = "#d00";
+
+                    // 3. Меняем кнопку на Лист Ожидания
+                    btn.innerText = "ВСТАТЬ В ЛИСТ ОЖИДАНИЯ";
+                    btn.href = "https://docs.google.com/forms/d/e/1FAIpQLSdrLWhd9JcbsV7fXR4MU6IWrnp-Cz7rS8h46VBMIySQlPgEcA/viewform?usp=publish-editor"; // Ссылка на форму листа ожидания
+                    btn.classList.add('waitlist-mode'); // Можно добавить стиль в CSS для другого цвета
+                    btn.style.backgroundColor = "#555"; // Темно-серый для отличия
                 } else if (remaining <= 5) {
                     statusEl.innerText = `ОСТАЛОСЬ ВСЕГО МЕСТ: ${remaining}`;
                 } else {
