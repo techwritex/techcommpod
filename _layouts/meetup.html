@@ -708,7 +708,7 @@
                 if (remaining <= 0) {
                     // statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
                     // btn.innerText = "РЕГИСТРАЦИЯ ЗАКРЫТА";
-                    btn.classList.add('sold-out'); 
+                    // btn.classList.add('sold-out'); 
                     document.getElementById('reg-status').innerText = "Статус: Регистрация закрыта.";
 
                     // 1. Показываем заметку про лист ожидания
@@ -720,7 +720,8 @@
 
                     // 3. Меняем кнопку на Лист Ожидания
                     btn.innerText = "ВСТАТЬ В ЛИСТ ОЖИДАНИЯ";
-                    btn.href = "https://docs.google.com/forms/d/e/1FAIpQLSdrLWhd9JcbsV7fXR4MU6IWrnp-Cz7rS8h46VBMIySQlPgEcA/viewform?usp=publish-editor"; // Ссылка на форму листа ожидания
+                    btn.setAttribute('href', 'https://docs.google.com/forms/d/e/1FAIpQLSdrLWhd9JcbsV7fXR4MU6IWrnp-Cz7rS8h46VBMIySQlPgEcA/viewform?usp=publish-editor');
+                    // btn.href = "https://docs.google.com/forms/d/e/1FAIpQLSdrLWhd9JcbsV7fXR4MU6IWrnp-Cz7rS8h46VBMIySQlPgEcA/viewform?usp=publish-editor"; // Ссылка на форму листа ожидания
                     btn.classList.add('waitlist-mode'); // Можно добавить стиль в CSS для другого цвета
                     btn.style.backgroundColor = "#555"; // Темно-серый для отличия
                 } else if (remaining <= 5) {
