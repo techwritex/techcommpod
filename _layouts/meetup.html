@@ -426,7 +426,7 @@
     <header class="header">
         <div class="container">
             <div class="top-nav">
-                <span class="badge">Статус: Регистрация открыта</span>
+                <span class="badge" id="reg-status">Статус: Регистрация открыта</span>
                 <!-- <span class="badge">REF: TC-2024-10-25</span> -->
                 <!-- Новый статус-индикатор -->
                 <!-- <span class="badge status-badge">
@@ -612,7 +612,7 @@
                 <div class="counter-container">
                     <div class="counter-header">
                         <!-- <span class="label">LIVE FEED</span> -->
-                        <span class="counter-text">РЕГИСТРАЦИЯ: <span id="current-reg">...</span> / <span id="max-reg">...</span></span>
+                        <span class="counter-text">ЗАРЕГИСТРИРОВАНО: <span id="current-reg">...</span> / <span id="max-reg">...</span></span>
                     </div>
                     <div class="counter-bar">
                         <div id="progress-line" class="counter-progress" style="width: 0%;"></div>
@@ -625,42 +625,14 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSd466GK9QJ_rb4tx4g3simLJd4CCuFHbEmBS4hm0ccSBD_lMw/viewform?usp=publish-editor" target="_blank" class="btn-main" id="reg-button" style="text-decoration: none; display: block; text-align: center;">
                     ЗАБРОНИРОВАТЬ МЕСТО
                 </a>
-                
-                <a href="#" class="btn-cal">Добавить в календарь (.ics)</a>
-                
-            </div>
-            
-            <div class="form-box">
-                <!-- Индикатор заполненности -->
-                <div class="counter-container">
-                    <div class="counter-header">
-                        <span class="label">LIVE FEED</span>
-                        <span class="counter-text">РЕГИСТРАЦИЯ: <span id="current-reg">...</span> / 30</span>
-                    </div>
-                    <div class="counter-bar">
-                        <div id="progress-line" class="counter-progress" style="width: 0%;"></div>
-                    </div>
-                    <p id="vacancy-status" style="font-size: 0.7rem; margin-top: 8px; text-align: center; text-transform: uppercase; letter-spacing: 1px;">
-                        СИНХРОНИЗАЦИЯ С БАЗОЙ...
-                    </p>
-                </div>
-            
-                <!-- Основная кнопка-ссылка -->
-                <a href="https://docs.google.com" 
-                   target="_blank" 
-                   id="reg-button" 
-                   class="btn-main" 
-                   style="text-decoration: none; display: block; text-align: center;">
-                    ЗАБРОНИРОВАТЬ МЕСТО
-                </a>
-                
+
                 <p style="font-size: 0.65rem; color: #666; text-align: center; margin-top: 15px; line-height: 1.2;">
                     * Нажимая кнопку, вы перейдете в Google Forms для заполнения анкеты участника.
                 </p>
-            
+                
                 <a href="#" class="btn-cal">Добавить в календарь (.ics)</a>
+                
             </div>
-            
         </section>
     </main>
 
@@ -732,9 +704,10 @@
                 if (remaining <= 0) {
                     statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
                     btn.innerText = "РЕГИСТРАЦИЯ ЗАКРЫТА";
-                    btn.classList.add('sold-out');
+                    btn.classList.add('sold-out'); 
+                    document.getElementById('reg-status').innerText = "Статус: Регистрация закрыта.";
                 } else if (remaining <= 5) {
-                    statusEl.innerText = `СРОЧНО: ОСТАЛОСЬ ВСЕГО ${remaining} МЕСТ`;
+                    statusEl.innerText = `ОСТАЛОСЬ ВСЕГО МЕСТ: ${remaining}`;
                 } else {
                     statusEl.innerText = `СВОБОДНО МЕСТ: ${remaining}`;
                 }
