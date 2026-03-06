@@ -146,21 +146,19 @@
 
         .meta-box:last-child { border: none; }
 
-        /* 01. Speakers */
-        .speaker-grid {
+        /* 01. Speakers вариант с тремя экспертами*/
+        /* .speaker-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
         }
 
         .speaker-card {
-            /* border: var(--border); */
             border: var(--border-img);
             padding: 25px;
         }
 
         .img-wrapper {
-            /* border: var(--border); */
             border: var(--border-img);
             padding: 5px;
             display: inline-block;
@@ -176,6 +174,47 @@
 
         .role { font-weight: bold; font-size: 0.9rem; margin: 5px 0; }
         .topic { font-style: italic; border-top: 1px dashed #000; padding-top: 10px; margin-top: 10px; }
+        */
+
+        /* 01. Speakers 2x2 (Fixed Height) */
+        .speaker-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .speaker-card {
+            border: var(--border);
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Выравнивание высоты */
+            position: relative;
+        }
+        .speaker-card::before {
+            content: "ID#" attr(data-id);
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            font-size: 0.7rem;
+            color: #999;
+        }
+        .img-wrapper {
+            border: var(--border);
+            padding: 5px;
+            display: inline-block;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+        .speaker-img { display: block; width: 150px; height: 150px; filter: grayscale(1); object-fit: cover; }
+        .speaker-card h3 { margin: 10px 0 5px; font-size: 1.2rem; text-transform: uppercase; }
+        .role { font-weight: bold; font-size: 0.85rem; margin-bottom: 15px; color: #555; }
+        .topic {
+            margin-top: auto; /* Прижимает тему к низу */
+            font-style: italic;
+            border-top: 1px dashed #000;
+            padding-top: 15px;
+            font-size: 0.9rem;
+        }
 
         /* 02. Timeline */
         .timeline {
@@ -467,7 +506,7 @@
         </section>
 
         <!-- 01. Спикеры -->
-        <section class="section">
+        <!-- <section class="section">
             <h2 class="section-title">ЭКСПЕРТЫ</h2>
             <div class="speaker-grid">
                 <div class="speaker-card">
@@ -491,6 +530,47 @@
                         <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Сергей" class="speaker-img">
                     </div>
                     <h3>СЕРГЕЙ ВОЛКОВ</h3>
+                    <p class="role">Должность, Компания</p>
+                    <p class="topic">"Тема выступления/доклада"</p>
+                </div>
+            </div>
+        </section> -->
+        <!-- Speakers 2x2 Section -->
+        <section class="section">
+            <h2 class="section-title">ЭКСПЕРТЫ</h2>
+            <div class="speaker-grid">
+                <div class="speaker-card" data-id="01">
+                    <div class="img-wrapper">
+                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Спикер 1" class="speaker-img">
+                    </div>
+                    <h3>АЛЕКСЕЙ ИВАНОВ</h3>
+                    <p class="role">Должность, Компания</p>
+                    <p class="topic">"Тема выступления/доклада"</p>
+                </div>
+
+                <div class="speaker-card" data-id="02">
+                    <div class="img-wrapper">
+                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Спикер 2" class="speaker-img">
+                    </div>
+                    <h3>АНДРЕЙ ФЕДОРОВ</h3>
+                    <p class="role">Должность, Компания</p>
+                    <p class="topic">"Тема выступления/доклада"</p>
+                </div>
+
+                <div class="speaker-card" data-id="03">
+                    <div class="img-wrapper">
+                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Спикер 3" class="speaker-img">
+                    </div>
+                    <h3>СЕРГЕЙ ВОЛКОВ</h3>
+                    <p class="role">Должность, Компания</p>
+                    <p class="topic">"Тема выступления/доклада"</p>
+                </div>
+
+                <div class="speaker-card" data-id="04">
+                    <div class="img-wrapper">
+                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Спикер 4" class="speaker-img">
+                    </div>
+                    <h3>СТЕПАН КУЗНЕЦОВ</h3>
                     <p class="role">Должность, Компания</p>
                     <p class="topic">"Тема выступления/доклада"</p>
                 </div>
