@@ -611,8 +611,8 @@
                 <!-- Счетчик участников -->
                 <div class="counter-container">
                     <div class="counter-header">
-                        <span class="label">LIVE FEED</span>
-                        <span class="counter-text">РЕГИСТРАЦИЯ: <span id="current-reg">...</span> / 30</span>
+                        <!-- <span class="label">LIVE FEED</span> -->
+                        <span class="counter-text">РЕГИСТРАЦИЯ: <span id="current-reg">...</span> / <span id="max-reg">...</span></span>
                     </div>
                     <div class="counter-bar">
                         <div id="progress-line" class="counter-progress" style="width: 0%;"></div>
@@ -644,7 +644,7 @@
     <script>
 
         function startCountdown() {
-            const targetDate = new Date("March 25, 2026 19:00:00").getTime();
+            const targetDate = new Date("April 23, 2026 19:00:00").getTime();
 
             const timerInterval = setInterval(function() {
                 const now = new Date().getTime();
@@ -676,7 +676,7 @@
             // 2. Выберите "Весь документ" и формат "CSV"
             // 3. Вставьте полученную ссылку ниже:
             const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNke_kPosxmk-aDvjmk_qEFcuQwd8BMdE9lkvhlNNp7qNF804pGpkz2xxKY_23kZIobbSAKzehOsA/pub?output=csv';
-            const MAX_SEATS = 3;
+            const MAX_SEATS = 4;
 
             try {
                 const response = await fetch(CSV_URL);
@@ -691,6 +691,7 @@
 
                 // Обновляем UI
                 document.getElementById('current-reg').innerText = count;
+                document.getElementById('max-reg').innerText = MAX_SEATS;
                 document.getElementById('progress-line').style.width = percent + '%';
                 
                 const statusEl = document.getElementById('vacancy-status');
@@ -698,7 +699,7 @@
 
                 if (remaining <= 0) {
                     statusEl.innerText = "МЕСТ НЕТ / РЕГИСТРАЦИЯ ЗАКРЫТА";
-                    btn.innerText = "SOLD OUT";
+                    btn.innerText = "РЕГИСТРАЦИЯ ЗАКРЫТА";
                     btn.classList.add('sold-out');
                 } else if (remaining <= 5) {
                     statusEl.innerText = `СРОЧНО: ОСТАЛОСЬ ВСЕГО ${remaining} МЕСТ`;
