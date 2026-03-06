@@ -55,6 +55,27 @@
             font-size: 0.75rem;
         }
 
+        /* Таймер */
+        .timer-banner {
+            background: var(--black);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--black);
+        }
+
+        .timer-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .timer-values {
+            font-weight: bold;
+            font-family: var(--font-mono);
+        }
+
         /* Стиль для индикатора заполненности */
         .status-badge {
             border-color: #d00;
@@ -380,11 +401,28 @@
             .partner-header {
                 flex-direction: row-reverse;
             }
+            .timer-flex { 
+                flex-direction: column; gap: 5px; 
+            }
+            /* Прикрепить к верху (sticky), если нужно */
+            /* .timer-banner { 
+                position: sticky; top: 0; z-index: 1000; 
+            } */
         }
+
      </style>
 </head>
 <body>
+    <!-- Секция таймера -->
+    <div class="timer-banner">
+        <div class="container timer-flex">
+            <span class="label">ДО НАЧАЛА:</span>
+            <div id="countdown" class="timer-values">00д 00ч 00м 00с</div>
+            <span class="badge" style="border-color: var(--white); color: var(--white);">LIVE</span>
+        </div>
+    </div>
 
+    <!-- Секция шапки -->
     <header class="header">
         <div class="container">
             <div class="top-nav">
@@ -589,28 +627,7 @@
                 </a>
                 
                 <a href="#" class="btn-cal">Добавить в календарь (.ics)</a>
-                <!-- <h2 style="text-align: center;">Регистрация</h2> -->
-                <!-- <form action="https://api.web3forms.com" method="POST" id="reg-form"> -->
-                    <!-- <input type="hidden" name="access_key" value="37baaa03-e473-4040-b321-6f2d098dbb9f"> -->
-                    
-                    <!-- Настройка темы письма и уведомлений -->
-                    <!-- <input type="hidden" name="subject" value="Новая регистрация: TechCommPod Meetup"> -->
-                    <!-- <input type="hidden" name="from_name" value="TechComm Meetup Page"> -->
-                    
-                    <!-- Опционально: отключаем стандартную страницу успеха Web3Forms, 
-                         так как мы обрабатываем всё через JS -->
-                    <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
-                    <!-- <input type="text" name="name" placeholder="Имя" required> -->
-                    <!-- <input type="email" name="email" placeholder="Email" required> -->
-                    <!-- <button type="submit" class="btn-main">Участвовать</button> -->
-                    <!-- <div id="form-status" style="margin-top: 15px; font-size: 0.8rem; text-align: center; min-height: 1.2em;"></div> -->
-                    <!-- <a href="#" class="btn-cal">Добавить напоминание в календарь (.ics)</a> -->
-                <!-- </form>        -->
-                <!-- <p style="font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; text-align: center;">
-                    Места ограничены. Осталось мало слотов.
-                </p> -->
-                <!-- <button class="btn-main">ЗАБРОНИРОВАТЬ МЕСТО (1/30)</button>        -->
-                <!-- <button class="btn-main" onclick="window.location.href='https://techcommpod.ru';">ЗАБРОНИРОВАТЬ МЕСТО</button>       -->
+                
             </div>
         </section>
     </main>
@@ -626,49 +643,40 @@
 
     <script>
 
-        // const form = document.getElementById('reg-form');
-        // const status = document.getElementById('form-status');
+        function startCountdown() {
+            const targetDate = new Date("March 25, 2026 19:00:00").getTime();
 
-        // form.addEventListener('submit', function(e) {
-        //     e.preventDefault();
-            
-        //     // Show loading state
-        //     status.innerHTML = "> ИНИЦИАЛИЗАЦИЯ_ОТПРАВКИ...";
-        //     status.style.color = "black";
+            const timerInterval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
 
-        //     // Use FormData directly - this is the "Secret Sauce" for CORS
-        //     const formData = new FormData(form);
+                // Расчеты
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        //     fetch('https://api.web3forms.com', {
-        //         method: 'POST',
-        //         body: formData, // Send as FormData, NOT JSON string
-        //         headers: {
-        //             'Accept': 'application/json'
-        //             // REMOVE 'Content-Type': 'application/json'
-        //         }
-        //     })
-        //     .then(async (response) => {
-        //         const result = await response.json();
-        //         if (response.status === 200) {
-        //             status.innerHTML = "> SUCCESS: ДАННЫЕ ПРИНЯТЫ. ЖДЕМ ВАС!";
-        //             status.style.color = "#0070f3"; 
-        //             form.reset();
-        //         } else {
-        //             status.innerHTML = "> ERROR: " + (result.message || "ОТКАЗ_СЕРВЕРА");
-        //         }
-        //     })
-        //     .catch(error => {
-        //         console.error('Fetch Error:', error);
-        //         status.innerHTML = "> SYSTEM_FAILURE: ПРОВЕРЬТЕ CORS/NETWORK";
-        //     });
-        // });
+                // Отображение
+                document.getElementById("countdown").innerHTML = 
+                    `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+
+                // Если время истекло
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById("countdown").innerHTML = "МЕРОПРИЯТИЕ НАЧАЛОСЬ";
+                }
+            }, 1000);
+        }
+
+        // Инициализация
+        startCountdown();
 
         async function syncParticipants() {
             // 1. В Google Таблице: Файл -> Поделиться -> Опубликовать в интернете
             // 2. Выберите "Весь документ" и формат "CSV"
             // 3. Вставьте полученную ссылку ниже:
             const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfNke_kPosxmk-aDvjmk_qEFcuQwd8BMdE9lkvhlNNp7qNF804pGpkz2xxKY_23kZIobbSAKzehOsA/pub?output=csv';
-            const MAX_SEATS = 30;
+            const MAX_SEATS = 3;
 
             try {
                 const response = await fetch(CSV_URL);
