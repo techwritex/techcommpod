@@ -433,6 +433,38 @@
         @media (max-width: 768px) {
             .description-grid { grid-template-columns: 1fr; }
             .moderator-card { flex-direction: column-reverse; text-align: center; }
+            /* Разворачиваем сетку в одну колонку */
+            .speaker-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .speaker-card {
+                padding: 20px;
+                align-items: center; /* Центрируем всё содержимое карточки */
+                text-align: center;  /* Текст по центру для лучшего баланса */
+                height: auto;        /* На мобильных высота будет зависеть от контента */
+            }
+
+            .img-wrapper {
+                margin: 0 auto 15px auto; /* Центрируем обертку фото */
+            }
+
+            .speaker-img {
+                width: 120px;  /* Чуть уменьшаем фото для мобильных */
+                height: 120px;
+            }
+
+            .topic {
+                margin-top: 15px; /* Убираем авто-отступ, заменяя его фиксированным */
+                width: 100%;
+            }
+            
+            /* Увеличиваем заголовки для читаемости */
+            .speaker-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
         }
 
         /* Адаптив для мобильных устройств */
