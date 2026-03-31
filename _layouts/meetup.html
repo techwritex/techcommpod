@@ -536,36 +536,6 @@
         </section>
 
         <!-- 01. Спикеры -->
-        <!-- <section class="section">
-            <h2 class="section-title">ЭКСПЕРТЫ</h2>
-            <div class="speaker-grid">
-                <div class="speaker-card">
-                    <div class="img-wrapper">
-                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Алексей" class="speaker-img">
-                    </div>
-                    <h3>АЛЕКСЕЙ ИВАНОВ</h3>
-                    <p class="role">Должность, Компания</p>
-                    <p class="topic">"Тема выступления/доклада"</p>
-                </div>
-                <div class="speaker-card">
-                    <div class="img-wrapper">
-                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Мария" class="speaker-img">
-                    </div>
-                    <h3>АНДРЕЙ ФЕДОРОВ</h3>
-                    <p class="role">Должность, Компания</p>
-                    <p class="topic">"Тема выступления/доклада"</p>
-                </div>
-                <div class="speaker-card">
-                    <div class="img-wrapper">
-                        <img src="https://techcommpod.ru/assets/images/vladimir-yusupov-techwritexru.jpeg" alt="Сергей" class="speaker-img">
-                    </div>
-                    <h3>СЕРГЕЙ ВОЛКОВ</h3>
-                    <p class="role">Должность, Компания</p>
-                    <p class="topic">"Тема выступления/доклада"</p>
-                </div>
-            </div>
-        </section> -->
-        <!-- Speakers 2x2 Section -->
         <section class="section">
             <h2 class="section-title">ЭКСПЕРТЫ</h2>
             <div class="speaker-grid">
@@ -585,6 +555,8 @@
                     </div>
                     <h3>ЕКАТЕРИНА ПАВЛОВА</h3>
                     <p class="role">CPO Gramax</p>
+                    <p class="role">Автор процесса управления знаниями в РИТМ</p>
+                    <p class="role">Спикер WriteConf, TechWriter Days, Techdoc Meetup</p>
                     <p class="topic">"Мастер-класс: создаем сайт-визитку и портфолио в Gramax"</p>
                 </div>
 
@@ -594,6 +566,7 @@
                     </div>
                     <h3>ДМИТРИЙ РАЗВОЗЖАЕВ</h3>
                     <p class="role">Технический писатель, Ximi Data</p>
+                    <p class="role">Автор телеграм-канала Техниндзя</p>
                     <p class="topic">"ИИ в работе техписателя (тема уточняется)"</p>
                 </div>
 
@@ -688,7 +661,6 @@
                         <div class="partner-logo-box">
                             <img src="https://techcommpod.ru/assets/images/meetup/parawriter_logo.jpg" alt="Parawriter" class="partner-logo">
                         </div>
-                        <!-- <div class="partner-meta">ID_REF: 001_COMMUNITY</div> -->
                     </div>
                     <h3>Parawriter</h3>
                     <p>Канал технического писателя о текстах, работе в айти и ещё о чём-нибудь.</p>
@@ -701,7 +673,6 @@
                         <div class="partner-logo-box">
                             <img src="https://techcommpod.ru/assets/images/meetup/mishka-v-kurse.jpg" alt="Мишка в курсе: Технический писатель" class="partner-logo">
                         </div>
-                        <!-- <div class="partner-meta">ID_REF: 002_MEDIA</div> -->
                     </div>
                     <h3>Мишка в курсе: Технический писатель</h3>
                     <p>Канал о жизни и карьере техписателя.</p>
@@ -712,14 +683,6 @@
 
         <!-- Регистрация -->
         <section class="registration">
-            <!-- <div class="counter-container">
-                <div class="counter-label">ЗАРЕГИСТРИРОВАНО:</div>
-                <div class="counter-bar">
-                    <div class="counter-progress" style="width: 70%;"></div> --> <!-- 21 из 30 это 70% -->
-                <!-- </div>
-                <div class="counter-value"><span id="current-reg">21</span> / 30</div>
-            </div> --> 
-            
             <div class="form-box">
                 <!-- Счетчик участников -->
                 <div class="counter-container">
@@ -765,7 +728,7 @@
     <script>
 
         function startCountdown() {
-            const targetDate = new Date("April 23, 2026 19:00:00").getTime();
+            const targetDate = new Date("April 22, 2026 16:00:00").getTime();
 
             const timerInterval = setInterval(function() {
                 const now = new Date().getTime();
@@ -863,8 +826,8 @@
             e.preventDefault();
             const event = {
                 title: 'TechCommPod Online Meetup',
-                start: '20260423T180000',
-                end: '20260423T200000',
+                start: '20260422T160000',
+                end: '20260422T180000',
                 description: 'Ссылка на трансляцию придет на почту.'
             };
             
