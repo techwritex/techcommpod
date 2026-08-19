@@ -29,7 +29,7 @@ related_episode_3_intro: "Переход российских компаний �
 
 <!--more-->
 
-{% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_026/index.html" %}
+{% include player_frame.html src="https://techcommpod.s3.eu-north-1.amazonaws.com/pages/episode_027/index.html" %}
 
 ### Полезные ссылки
 
