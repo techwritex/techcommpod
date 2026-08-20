@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Явно разрешаем ИИ-краулерам парсить сайт для RAG-систем и поиска
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+Sitemap: https://techcommpod.ru/sitemap.xml

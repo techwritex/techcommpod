@@ -7,6 +7,26 @@
   	{% include nav.html %}
 		<div id="content-left">
       <div id="post">
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "PodcastEpisode",
+            "name": "{{ page.title | escape }}",
+            "datePublished": "{{ page.date | date_to_xmlschema }}",
+            "description": "{{ page.excerpt | strip_html | strip_newlines | escape }}",
+            "url": "{{ site.url }}{{ page.url }}",
+            "inLanguage": "ru",
+            "author": {
+              "@type": "Person",
+              "name": "{{ site.owner }}"
+            },
+            "partOfSeries": {
+              "@type": "PodcastSeries",
+              "name": "{{ site.title }}",
+              "url": "{{ site.url }}"
+            }
+          }
+        </script>
         <h3>{{ page.title }}</h3>
         <i>Опубликовано {{ page.date | date: "%d.%m.%Y" }}</i>
         {{ content }}
