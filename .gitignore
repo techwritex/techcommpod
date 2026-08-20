@@ -1,0 +1,13 @@
+# Сгенерированный сайт Jekyll
+_site/
+
+# Скрытые файлы кэша Jekyll
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Папка с установленными локально гемами (если используешь vendor/bundle)
+vendor/
+
+# Системные файлы macOS
+.DS_Store
